@@ -451,8 +451,18 @@ function openTimetable(){
     // A form typed in Monday's box is copied to Tuesday–Friday, unless a later day already has something or has been typed in by hand.
     const formRow = TT_ROWS.findIndex(r=>r.form), formBox = d=>m.querySelector(`[data-d="${d}"][data-r="${formRow}"]`);
     const handTyped = new Set([2, 3, 4, 5].filter(d=>formBox(d).value.trim()));
+    // Colour: each class code gets its own tint, the same wherever it appears (not the Form row).
+    const colourise = ()=>{
+      const hue = new Map();
+      m.querySelectorAll('input[type=text]').forEach(i=>{
+        const code = i.value.trim().toLowerCase();
+        if(!code || TT_ROWS[Number(i.dataset.r)].form){ i.removeAttribute('data-c'); i.style.removeProperty('--tt-h'); return; }
+        if(!hue.has(code)) hue.set(code, Math.round((200 + hue.size * 137.5) % 360)); // golden-angle steps keep neighbouring colours apart; starts at blue
+        i.dataset.c = '1'; i.style.setProperty('--tt-h', hue.get(code));
+      });
+    };
     m.querySelectorAll('td').forEach(showTimes);
-    fillSuggestions();
+    fillSuggestions(); colourise();
     m.addEventListener('input', e=>{
       const inp = e.target; if(!inp.matches('input[type=text]')) return;
       if(inp.dataset.r===String(formRow)){
@@ -461,7 +471,7 @@ function openTimetable(){
         else handTyped.add(d);
       }
       showTimes(inp.closest('td'));
-      fillSuggestions();
+      fillSuggestions(); colourise();
     });
     const first = m.querySelector('input[type=text]'); if(first) first.focus();
     m.querySelector('[data-a=no]').onclick = close;

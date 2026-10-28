@@ -169,6 +169,8 @@ button.dr-when{ cursor:pointer; }
 .tt-grid tbody th{ width:96px; vertical-align:top; padding-top:8px; }
 .tt-grid td{ vertical-align:top; }
 .tt-grid input[type=text]{ width:100%; min-width:84px; }
+.modal .tt-grid input[data-c]{ background:hsl(var(--tt-h) 80% 93%); border-color:hsl(var(--tt-h) 55% 74%); color:#1F2937; }
+html[data-app-theme="dark"] .modal .tt-grid input[data-c]{ background:hsl(var(--tt-h) 35% 24%); border-color:hsl(var(--tt-h) 35% 40%); color:var(--text); }
 .tt-name{ display:block; font-size:14px; font-weight:600; color:var(--text); }
 .tt-times{ display:block; font-size:11px; color:var(--text-2); }
 .modal .tt-grid select.tt-pick{ display:block; width:100%; min-width:0; height:20px; margin:2px 0 0; border:0; border-radius:0; box-shadow:none; font:inherit; font-size:11px; color:var(--text-2); text-align:center; text-align-last:center; cursor:pointer; appearance:none; -webkit-appearance:none; padding-right:12px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%236B7280' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 4px center; }
