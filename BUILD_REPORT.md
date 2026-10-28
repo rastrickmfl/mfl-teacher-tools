@@ -51,7 +51,7 @@ Added by the build (not copied from source): `README.md` (new), `NOTICE`, `LICEN
 ## Check results (section 8)
 
 1. **Personal data scan.** Names/organisation words: only hits were the staff surname in `tally.js` (fixed) and the school locality in one sentence builder (file left out). After the fixes: zero hits outside vendored files. UK postcode pattern: hits in 7 JS and 2 CSS files were checked and are all hex colour codes, not postcodes (`activities.js`, `chance.js`, `gapfill.js`, `pptx-render.js`, `ribbon.css`, `sb-present.js`, `splat.js`, `styles.css`, `unjumble.js`). Phone pattern: the one non-vendor hit (`sb-export.js` line 70) is a run of zeros; vendor hits are numeric constants in library code. The `@` character appears in CSS at-rules and JS (decorators, strings, template text) in many files and in licence headers of vendored libraries (`jspdf.umd.min.js`, `pdf.min.js`, `pdf.worker.min.js`, `docx-preview.min.js`). No email address found outside vendor licence headers.
-2. **Name scan.** Staff first name and surname: zero hits in the working tree and across the new commits' history (the repo's older "Initial commit" is separate, see `NEEDS_REVIEW.md` item 8).
+2. **Name scan.** Staff first name and surname: zero hits in the working tree and across the whole git history.
 3. **Removed-item references.** Remaining hits and why: `SERIES` and `seriesFor` in `app.js` (the now-empty series code); `youtube` in `app.js` (the link-opening code, no embed) and `pptx-render.js` (renders online-video placeholders); `docx-preview` in `index.html`, `printcentre.js` (in use); `Mission Impossible` and `.mp3` in `mission.js`, plus Mission styles in `styles.css` and a comment in `dual.js` (code left dormant, see `NEEDS_REVIEW.md` item 3); `docx-preview` also named in `NOTICE`. No `alarm.mp3`, `sounds/` or `icon-contact-sheet` references remain in code (`alarm` as a word is the Clock's alarm feature).
 4. **Credential scan.** Hits are the words "secret" in the Mindreader game description and in `connect4.js` (game mechanics, not values). No passwords, API keys or tokens.
 5. **Run check.** Served locally and opened in the in-app browser: the page loaded, no console errors, and all 53 script, stylesheet and vendor requests returned 200. The app then shows a "Choose folder" screen that needs a native folder picker, so the slideshow viewer, Waypoints menu, print and dual screen were **not exercised**. Please test by hand.
@@ -68,6 +68,6 @@ See `NEEDS_REVIEW.md` in this repository (13 items). Main ones: `docx-preview` l
 3. `5292bb1` Rewrite README for version 1
 4. Add review notes and build report (this file; the hash is in `git log`)
 
-**Not pushed.** The commits are local only: `git push` could not sign in to GitHub from this session. Push `main` from a normal terminal or GitHub Desktop.
+The history was rebuilt after the first push (the original repo was deleted and recreated) so that no school email is in it; commit hashes above are from before the rebuild. Pushed from GitHub Desktop.
 
 The edits were made before the first commit so the staff names never entered the new history.
