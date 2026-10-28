@@ -427,10 +427,11 @@ function openTimetable(){
     const cur = ttChoice(tt, row, d);
     return `<span class="tt-auto" hidden></span><select class="tt-pick" data-pk="${row.key}" data-pd="${d}" aria-label="${DAYS[d-1]} ${row.name} time" hidden>${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select>`;
   };
-  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" aria-label="${DAYS[d-1]} ${row.name}">${timePick(row, d)}</td>`).join('')}</tr>`).join('');
+  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" list="${row.form ? 'tt-forms' : 'tt-codes'}" aria-label="${DAYS[d-1]} ${row.name}">${timePick(row, d)}</td>`).join('')}</tr>`).join('');
   modal(`<h2>Your timetable</h2>
     <p>Type a class code in each lesson, like <b>8A/Fr1</b>, and leave free periods empty. Every code gets a class list in Settings → Classes.</p>
     <div class="tt-wrap"><table class="tt-grid"><thead><tr><th></th>${DAYS.map(d=>`<th>${d}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
+    <datalist id="tt-codes"></datalist><datalist id="tt-forms"></datalist>
     <div class="foot"><button class="btn" data-a="no">Cancel</button><button class="btn primary" data-a="ok">Save timetable</button></div>`, (m, close)=>{
     m.classList.add('tt-modal');
     // Under each P2 / Form box: the time its year group gives, or (no year group in the code) a choice of the two.
@@ -441,8 +442,27 @@ function openTimetable(){
       auto.hidden = !code || r==null; sel.hidden = !code || r!=null;
       if(r!=null) auto.textContent = timeText(row.times[r]);
     };
+    // Suggestions: a class code already typed in the table is offered in the other boxes (lessons and Form are suggested separately).
+    const fillSuggestions = ()=>{
+      const seen = { 'tt-codes':new Set(), 'tt-forms':new Set() };
+      m.querySelectorAll('input[type=text]').forEach(i=>{ const v = i.value.trim(); if(v) seen[i.getAttribute('list')].add(v); });
+      for(const [id, set] of Object.entries(seen)) m.querySelector('#' + id).innerHTML = [...set].sort().map(v=>`<option value="${esc(v)}"></option>`).join('');
+    };
+    // A form typed in Monday's box is copied to Tuesday–Friday, unless a later day already has something or has been typed in by hand.
+    const formRow = TT_ROWS.findIndex(r=>r.form), formBox = d=>m.querySelector(`[data-d="${d}"][data-r="${formRow}"]`);
+    const handTyped = new Set([2, 3, 4, 5].filter(d=>formBox(d).value.trim()));
     m.querySelectorAll('td').forEach(showTimes);
-    m.addEventListener('input', e=>{ if(e.target.matches('input[type=text]')) showTimes(e.target.closest('td')); });
+    fillSuggestions();
+    m.addEventListener('input', e=>{
+      const inp = e.target; if(!inp.matches('input[type=text]')) return;
+      if(inp.dataset.r===String(formRow)){
+        const d = Number(inp.dataset.d);
+        if(d===1){ for(const x of [2, 3, 4, 5]) if(!handTyped.has(x)){ formBox(x).value = inp.value; showTimes(formBox(x).closest('td')); } }
+        else handTyped.add(d);
+      }
+      showTimes(inp.closest('td'));
+      fillSuggestions();
+    });
     const first = m.querySelector('input[type=text]'); if(first) first.focus();
     m.querySelector('[data-a=no]').onclick = close;
     m.querySelector('[data-a=ok]').onclick = ()=>{
