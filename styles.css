@@ -162,15 +162,18 @@ button.dr-when{ cursor:pointer; }
 .modal-back{ position:fixed; inset:0; background:rgba(17,17,20,.35); z-index:70; display:grid; place-items:center; padding:16px; }
 .modal{ background:var(--surface); border-radius:var(--r-lg); box-shadow:var(--shadow-float); width:min(560px,100%); max-height:90vh; overflow:auto; padding:24px; }
 .modal.tt-modal{ width:min(760px,100%); }
-.tt-wrap{ overflow-x:auto; margin:0 0 12px; }
-.tt-grid{ border-collapse:separate; border-spacing:6px; width:100%; }
-.tt-grid th{ font-weight:600; text-align:left; font-size:var(--fs-sm, 13px); color:var(--text-2); white-space:nowrap; }
-.tt-grid thead th{ text-align:center; }
+.tt-wrap{ overflow-x:auto; margin:8px 0 16px; }
+.tt-grid{ border-collapse:separate; border-spacing:6px 4px; width:100%; }
+.tt-grid th{ text-align:left; white-space:nowrap; font-weight:400; }
+.tt-grid thead th{ text-align:center; font-size:12px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--text-2); }
+.tt-grid tbody th{ width:96px; vertical-align:top; padding-top:8px; }
+.tt-grid td{ vertical-align:top; }
 .tt-grid input[type=text]{ width:100%; min-width:84px; }
-.tt-times{ display:block; font-weight:400; font-size:12px; margin-top:2px; }
-.tt-pick{ width:100%; min-width:84px; margin-top:4px; height:28px; border:1px solid var(--border-strong); border-radius:var(--r); font:inherit; font-size:12px; background:var(--surface); color:inherit; }
-.tt-times label{ display:block; white-space:nowrap; cursor:pointer; }
-.tt-times input{ margin:0 4px 0 0; vertical-align:-2px; }
+.tt-name{ display:block; font-size:14px; font-weight:600; color:var(--text); }
+.tt-times{ display:block; font-size:11px; color:var(--text-2); }
+.modal .tt-grid select.tt-pick{ display:block; width:100%; min-width:0; height:20px; margin:2px 0 0; border:0; border-radius:0; box-shadow:none; font:inherit; font-size:11px; color:var(--text-2); text-align:center; text-align-last:center; cursor:pointer; appearance:none; -webkit-appearance:none; padding-right:12px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%236B7280' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 4px center; }
+.modal .tt-grid tbody th select.tt-pick{ text-align:left; text-align-last:left; }
+.modal .tt-grid select.tt-pick:hover, .modal .tt-grid select.tt-pick:focus{ color:var(--accent); outline:none; text-decoration:underline; }
 .modal h2{ margin:0 0 4px; font-size:var(--fs-xl); font-weight:600; }
 .modal p{ color:var(--text-2); margin:0 0 12px; }
 .modal .row{ display:flex; align-items:center; gap:12px; padding:14px 0; border-top:1px solid var(--border); }
