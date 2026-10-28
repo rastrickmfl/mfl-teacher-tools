@@ -321,6 +321,7 @@ const store = PUPIL ? LinkStore : TEST ? MemStore : FsStore;
 
 /* ---------------- planner timetable ---------------- */
 const PLANNER_KEY = 'mfl_planner_v1';
+const TT_TIMES = [['08:45','09:45'], ['09:45','10:45'], ['11:05','12:05'], ['12:05','13:05'], ['14:00','15:00']]; // starting times of the five periods
 const Planner = {
   handle:null, data:null, source:null, fileName:'', needsPerm:false, error:'',
   valid(d){ return d && Array.isArray(d.slots); },
@@ -352,6 +353,18 @@ const Planner = {
     return false;
   },
   async regrant(){ if(!this.handle) return; if((await this.handle.requestPermission({ mode:'read' }))==='granted') await this.readFile(); },
+  // The typed-in timetable (data.timetable, saved in viewer-data.json): five periods a day, Monday to Friday.
+  // A class code in a box makes a lesson slot. Used instead of any planner file once it has a code in it.
+  applyManual(tt){
+    const slots = [];
+    if(tt && tt.grid) for(let day = 1; day <= 5; day++) for(let p = 0; p < 5; p++){
+      const code = String(((tt.grid[day] || [])[p]) || '').trim();
+      const [start, end] = (tt.times || [])[p] || TT_TIMES[p];
+      if(code) slots.push({ id:`d${day}p${p+1}`, day, period:p+1, start, end, label:code });
+    }
+    if(slots.length){ this.data = { slots, holidays:[] }; this.source = 'manual'; this.needsPerm = false; this.error = ''; }
+    else if(this.source==='manual'){ this.data = null; this.source = null; }
+  },
   slotsFor(d){ const wd = d.getDay(); return (this.data ? this.data.slots : []).filter(s=>s.day===wd).sort((a,b)=>toMin(a.start)-toMin(b.start)); },
   holiday(d){ const s = iso(d); return ((this.data && this.data.holidays) || []).find(h=>s>=h.start && s<=h.end) || null; },
 };
@@ -360,9 +373,46 @@ const isForm = l => /^Form\b/.test(l || '');
 function slotKind(label){ if(isBreakLike(label)) return 'slim'; if(isForm(label) || /^(L&M|PPA)\b/.test(label)) return 'muted'; return 'lesson'; }
 function periodLabel(slot, slots){
   const teaching = slots.filter(s=>!isBreakLike(s.label) && !isForm(s.label));
+  if(slot.period && !isBreakLike(slot.label) && !isForm(slot.label)) return 'P' + slot.period; // typed-in timetable: a free period keeps its number
   const i = teaching.findIndex(s=>s.id===slot.id);
   if(i>=0) return 'P' + (i+1);
   return isForm(slot.label) ? 'Form' : slot.label;
+}
+
+/* ---------------- typed-in timetable ---------------- */
+// Settings → Timetable (and the dashboard's "Set up timetable"): a Monday–Friday, five-period grid of class codes.
+// Every code becomes a lesson slot (Planner.applyManual) and, through classLabels(), a class in Settings → Classes,
+// where pupil names can be pasted in.
+function openTimetable(){
+  const tt = data.timetable || {};
+  const DAYS = ['Mon','Tue','Wed','Thu','Fri'];
+  const cell = (day, p)=>`<td><input type="text" maxlength="24" data-d="${day}" data-p="${p}" value="${esc(((tt.grid || {})[day] || [])[p] || '')}" aria-label="${DAYS[day-1]} period ${p+1}"></td>`;
+  const rows = [0,1,2,3,4].map(p=>{
+    const [s, e] = (tt.times || [])[p] || TT_TIMES[p];
+    return `<tr><th scope="row">P${p+1}<span class="tt-times"><input type="time" data-ts="${p}" value="${esc(s)}" aria-label="Period ${p+1} start"> – <input type="time" data-te="${p}" value="${esc(e)}" aria-label="Period ${p+1} end"></span></th>${[1,2,3,4,5].map(d=>cell(d, p)).join('')}</tr>`;
+  }).join('');
+  modal(`<h2>Your timetable</h2>
+    <p>Type the class code for each lesson, for example <b>8A/Fr1</b>. Leave a box empty for a free period. Each new class code gets its own class list in Settings → Classes, where you can paste in the class's names.</p>
+    <div class="tt-wrap"><table class="tt-grid"><thead><tr><th></th>${DAYS.map(d=>`<th>${d}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="foot"><button class="btn" data-a="no">Cancel</button><button class="btn primary" data-a="ok">Save timetable</button></div>`, (m, close)=>{
+    m.classList.add('tt-modal');
+    const first = m.querySelector('input[type=text]'); if(first) first.focus();
+    m.querySelector('[data-a=no]').onclick = close;
+    m.querySelector('[data-a=ok]').onclick = ()=>{
+      const grid = {}, times = [];
+      for(let d = 1; d <= 5; d++) grid[d] = [0,1,2,3,4].map(p=>m.querySelector(`[data-d="${d}"][data-p="${p}"]`).value.trim());
+      for(let p = 0; p < 5; p++){
+        const s = m.querySelector(`[data-ts="${p}"]`).value || TT_TIMES[p][0], e = m.querySelector(`[data-te="${p}"]`).value || TT_TIMES[p][1];
+        times.push([s, e]);
+      }
+      data.timetable = { grid, times };
+      Planner.applyManual(data.timetable);
+      saveSoon(); close();
+      const n = new Set(grid[1].concat(grid[2], grid[3], grid[4], grid[5]).filter(Boolean)).size;
+      toast(n ? `Timetable saved: ${n} class${n>1 ? 'es' : ''}. Add names in Settings → Classes.` : 'Timetable cleared');
+      if(view.name==='settings') renderSettings(); else if(view.name==='dash') renderDashboard();
+    };
+  });
 }
 
 /* ---------------- persisted data ---------------- */
@@ -798,11 +848,8 @@ class DeckCache extends Map{
 }
 const deckCache = new DeckCache();
 const THEME_KEYS = ['7','8','9','10','11','A','orig'];
-function themeAuto(l){
-  try{ if(localStorage.getItem('sv_year_colours')==='off') return 'orig'; }catch(e){}
-  const y = yearOf(l && l.label) || (/^Year (\d+)\//.exec(String((l && (l.lib || l.fromLib)) || '')) || [])[1];
-  return ['7','8','9','10','11'].includes(String(y)) ? String(y) : 'A';
-}
+// Decks are shown as imported. A year group's colours are applied only when the teacher picks them in the editor's Design tab.
+function themeAuto(l){ return 'orig'; }
 const themeKey = l=>l && THEME_KEYS.includes(l.theme) ? l.theme : themeAuto(l);
 const THEME_NAMES = { '7':'Year 7 (green)', '8':'Year 8 (teal)', '9':'Year 9 (burgundy)', '10':'Year 10 (purple)', '11':'Year 11 (grey)', A:'Gold (not year-specific)', orig:'As imported' };
 const themePalette = key=>!window.YearColours || key==='orig' ? null : key==='A' ? YearColours.PALETTES.gold : YearColours.PALETTES['Year ' + key] || null;
@@ -1294,6 +1341,7 @@ async function loadAndGo(){
     if(window.SVStarter && store.dir){ try{ await SVStarter.seed(store.dir); }catch(e){ console.warn(e); } } // starter Sentence Builders and Waypoints
     const r = await store.readData();
     data = normalise(r.data);
+    Planner.applyManual(data.timetable);
     if(!r.data) await saveNow(); else afterRead();
   } finally { hideLoading(); }
   renderDashboard();
@@ -1422,7 +1470,7 @@ function renderDashboard(){
   const banners = [];
   if(!Planner.data){
     if(Planner.needsPerm) banners.push(`<div class="banner"><span class="grow">Edge needs permission to read your planner timetable (<b>${esc(Planner.fileName)}</b>).</span><button class="btn sm primary" data-a="planner-regrant">Allow</button></div>`);
-    else banners.push(`<div class="banner"><span class="grow">${esc(Planner.error || '')} Link your MFL Planner's synced data file (.json) to show your timetable here.</span><button class="btn sm primary" data-a="planner-link">Link planner file</button></div>`);
+    else banners.push(`<div class="banner"><span class="grow">Type in your class codes to show your timetable here.</span><button class="btn sm primary" data-a="planner-link">Set up timetable</button></div>`);
   } else if(Planner.needsPerm){
     banners.push(`<div class="banner"><span class="grow">Using this PC's copy of your planner timetable. Allow access to <b>${esc(Planner.fileName)}</b> for the synced version.</span><button class="btn sm" data-a="planner-regrant">Allow</button></div>`);
   }
@@ -1608,7 +1656,7 @@ app.addEventListener('click', async e=>{
     case 'pv-go': if(preview){ preview.pos = Number(b.dataset.p) || 0; showPreviewSlide(); } break;
     case 'rename': renameInline(b, data.lessons[b.dataset.id]); break;
     case 'settings': openSettings(); break;
-    case 'planner-link': try{ if(await Planner.link()) toast('Timetable linked'); }catch(err){ if(err.name!=='AbortError') toast(err.message, true); } renderDashboard(); break;
+    case 'planner-link': openTimetable(); break;
     case 'planner-regrant': try{ await Planner.regrant(); }catch(err){} renderDashboard(); break;
     case 'stack': if(window.SVPrint) SVPrint.openStack(b.dataset.d); break;
     case 'printing': if(window.SVPrintCentre) SVPrintCentre.open(); break; // Printing Centre (printcentre.js)
@@ -1927,11 +1975,11 @@ function setSecHTML(){
       <p class="set-intro">Saved in viewer-data.json. Ask Claude "What ideas shall we work on next?" in a session linked to this folder.</p>
       <div class="set-card">${list || `<div class="row"><div class="grow"><div class="d">No ideas yet. Add one with a short message and, if you like, more detail.</div></div></div>`}</div>`;
   }
-  const src = Planner.source==='file' ? `Synced file: ${Planner.fileName}` : Planner.source==='local' ? "This PC's planner data (not synced)" : 'Not linked';
+  const src = Planner.source==='manual' ? `${new Set(Planner.data.slots.map(s=>s.label)).size} class codes typed in` : 'Not set up yet';
   return `<div class="set-head"><h2>General</h2></div>
     <div class="set-card">
       <div class="row"><div class="grow"><div class="t">Data folder</div><div class="d">${esc(store.name)} — viewer-data.json and the Lessons folder</div></div><button class="btn sm" data-s="folder">Change…</button></div>
-      <div class="row"><div class="grow"><div class="t">Timetable</div><div class="d">${esc(src)}</div></div><button class="btn sm" data-s="planner">${Planner.source==='file' ? 'Change…' : 'Link file…'}</button></div>
+      <div class="row"><div class="grow"><div class="t">Timetable</div><div class="d">${esc(src)}</div></div><button class="btn sm" data-s="planner">${Planner.source==='manual' ? 'Edit…' : 'Set up…'}</button></div>
     </div>
     <h3 class="set-sub">Appearance</h3>
     <div class="set-card">
@@ -1967,7 +2015,7 @@ app.addEventListener('click', async e=>{
     case 'beta': data.settings.beta = Object.assign({}, data.settings.beta, { [b.dataset.k]: b.dataset.v==='1' }); saveSoon(); renderSettings(); break;
     case 'beta-all': data.settings.beta = {}; saveSoon(); renderSettings(); break;
     case 'dual': await SVDual.setWanted(b.dataset.v==='1'); renderSettings(); break;
-    case 'planner': try{ await Planner.link(); }catch(err){ if(err.name!=='AbortError') toast(err.message, true); } renderSettings(); break;
+    case 'planner': openTimetable(); break;
     case 'folder': try{ await store.pick(); await loadAndGo(); }catch(err){ if(err.name!=='AbortError') toast(err.message, true); } break;
     case 'gc-add': if(window.SVChance) SVChance.editSet(null, ()=>renderSettings()); break;
     case 'gc-edit': if(window.SVChance && row) SVChance.editSet(row.dataset.id, ()=>renderSettings()); break;
@@ -8151,7 +8199,7 @@ function themeMenu(E, b){
     n.onclick = e=>{ e.stopPropagation(); closeMenus(); setTheme(E, k); };
     return { node:n };
   };
-  openMenu(b, [{ head:'Colours for this lesson' }, ...['7','8','9','10','11'].map(k=>row(k, THEME_NAMES[k].replace(/ \(.*$/, ''), k===auto ? "this lesson's year" : '')),
+  openMenu(b, [{ head:'Colours for this lesson' }, ...['7','8','9','10','11'].map(k=>row(k, THEME_NAMES[k].replace(/ \(.*$/, ''), k===String(yearOf(E.l.label)) ? "this lesson's year" : '')),
     row('A', 'Gold', 'not year-specific'), '-', row('orig', 'Default', 'as imported')]);
 }
 // Slides you added in the editor keep their colours as saved; switch the ones that were the old theme's dark / middle / light.

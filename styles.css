@@ -161,6 +161,14 @@ button.dr-when{ cursor:pointer; }
 .menu hr{ border:0; border-top:1px solid var(--border); margin:4px 0; }
 .modal-back{ position:fixed; inset:0; background:rgba(17,17,20,.35); z-index:70; display:grid; place-items:center; padding:16px; }
 .modal{ background:var(--surface); border-radius:var(--r-lg); box-shadow:var(--shadow-float); width:min(560px,100%); max-height:90vh; overflow:auto; padding:24px; }
+.modal.tt-modal{ width:min(760px,100%); }
+.tt-wrap{ overflow-x:auto; margin:0 0 12px; }
+.tt-grid{ border-collapse:separate; border-spacing:6px; width:100%; }
+.tt-grid th{ font-weight:600; text-align:left; font-size:var(--fs-sm, 13px); color:var(--text-2); white-space:nowrap; }
+.tt-grid thead th{ text-align:center; }
+.tt-grid input[type=text]{ width:100%; min-width:84px; }
+.tt-times{ display:block; font-weight:400; font-size:12px; margin-top:2px; }
+.tt-times input{ width:84px; height:26px; border:1px solid var(--border-strong); border-radius:var(--r); padding:0 4px; font:inherit; font-size:12px; background:var(--surface); color:inherit; }
 .modal h2{ margin:0 0 4px; font-size:var(--fs-xl); font-weight:600; }
 .modal p{ color:var(--text-2); margin:0 0 12px; }
 .modal .row{ display:flex; align-items:center; gap:12px; padding:14px 0; border-top:1px solid var(--border); }
