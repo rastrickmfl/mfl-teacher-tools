@@ -523,7 +523,7 @@ function normalise(d){
   d.lessons = d.lessons || {};
   d.extras = d.extras || {};
   d.settings = Object.assign({ rail:'right', showTimeLeft:true, clockMode:0 }, d.settings || {});
-  d.ideas = Array.isArray(d.ideas) ? d.ideas.filter(i=>i && typeof i.short==='string').map(i=>({ id:i.id || 'i' + uid(), short:i.short, detail:typeof i.detail==='string' ? i.detail : '' })) : []; // Settings → Future development ideas
+  d.ideas = Array.isArray(d.ideas) ? d.ideas.filter(i=>i && typeof i.short==='string').map(i=>({ id:i.id || 'i' + uid(), short:i.short, detail:typeof i.detail==='string' ? i.detail : '' })) : []; // kept so old saved ideas aren't lost (no longer shown)
   d.templates = normTemplates(d.templates); // Slide / Object Gallery (v1.33)
   seedInon(d.templates); // v1.92: the built-in IN&ON templates
   d.alarms = Array.isArray(d.alarms) ? d.alarms.filter(a=>a && typeof a.at==='number') : []; // clock tool (tools.js)
@@ -1998,10 +1998,10 @@ function addExtra(){
   });
 }
 /* Settings page (v1.41; was a pop-up). view 'settings'. Left menu: General, Classes & achievement
-   points (classes.js draws into the page), Question sets (chance.js; also used by games.js), Sentence builders (builder.js, mounted here), Future development ideas. */
+   points (classes.js draws into the page), Question sets (chance.js; also used by games.js), Sentence builders (builder.js, mounted here). */
 let setSec = 'general';
 /* Settings → Beta (v1.61): new changes that can be turned off one at a time, to go back to how
-   they worked before. data.settings.beta[key] === false is off; anything else (or missing) is on.
+   they worked before. data.settings.beta[key] === true is on; anything else (or missing) is off.
    Saved in viewer-data.json, so they follow you to every computer. Read when a lesson opens. */
 const BETA = [
   ['fine', 'Fine pen size', 'Adds a Fine size (thinner than Thin) and makes it the pen\'s starting size.', 'Thin, Medium and Thick; the pen starts on Thin.'],
@@ -2011,7 +2011,7 @@ const BETA = [
   ['hlblend', 'Highlighter blend', 'Highlighter goes under the pen ink like a real highlighter: writing under it stays crisp and overlapping strokes don\'t get darker. It barely shows on dark backgrounds.', 'See-through (38%) on top of everything, including pen ink.'],
   ['eraser', 'Eraser catches fast swipes', 'The eraser checks the whole of each line and fills in quick swipes, so it doesn\'t skip strokes.', 'Only erases where the eraser and the line\'s recorded points meet, so a fast swipe can miss.'],
 ];
-function beta(k){ const b = data && data.settings && data.settings.beta; return !(b && b[k]===false); }
+function beta(k){ const b = data && data.settings && data.settings.beta; return !!(b && b[k]===true); }
 const SET_SECS = [
   ['general', 'General', 'settings'],
   ['classes', 'Classes & achievement points', 'users'],
@@ -2019,7 +2019,6 @@ const SET_SECS = [
   ['sb', 'Sentence builders', 'sb'],
   ['wp', 'Waypoints', 'image'],
   ['beta', 'Beta', 'pen'],
-  ['ideas', 'Future development ideas', 'bulb'],
 ];
 function openSettings(sec, opt){
   if(!data) return;
@@ -2062,14 +2061,8 @@ function setSecHTML(){
   if(setSec==='beta'){
     const rows = BETA.map(([k, t, on, off])=>`<div class="row"><div class="grow"><div class="t">${esc(t)}</div><div class="d">${esc(on)}</div><div class="d"><b>Off:</b> ${esc(off)}</div></div><span class="seg"><button data-s="beta" data-k="${k}" data-v="1" class="${beta(k)?'on':''}">On</button><button data-s="beta" data-k="${k}" data-v="0" class="${!beta(k)?'on':''}">Off</button></span></div>`).join('');
     return `<div class="set-head"><h2>Beta</h2><button class="btn sm" data-s="beta-all">All on</button></div>
-      <p class="set-intro">New pen changes (version 1.61). Turn any of them off to go back to how it worked before. Changes apply the next time you open a lesson, on every computer (they're saved in viewer-data.json).</p>
+      <p class="set-intro">New pen changes (version 1.61). They're off by default; turn any of them on to try it. Changes apply the next time you open a lesson, on every computer (they're saved in viewer-data.json).</p>
       <div class="set-card">${rows}</div>`;
-  }
-  if(setSec==='ideas'){
-    const list = data.ideas.map(i=>`<div class="row idea-row" data-id="${esc(i.id)}"><div class="grow" data-s="idea-edit"><div class="t">${esc(i.short)}</div>${i.detail ? `<div class="d idea-detail">${esc(i.detail)}</div>` : ''}</div><button class="icon-btn" data-s="idea-edit" title="Edit" aria-label="Edit">${icon('edit')}</button><button class="icon-btn" data-s="idea-del" title="Delete" aria-label="Delete">${icon('trash')}</button></div>`).join('');
-    return `<div class="set-head"><h2>Future development ideas</h2><button class="btn primary" data-s="idea-add">${icon('plus')}Add idea</button></div>
-      <p class="set-intro">Saved in viewer-data.json. Ask Claude "What ideas shall we work on next?" in a session linked to this folder.</p>
-      <div class="set-card">${list || `<div class="row"><div class="grow"><div class="d">No ideas yet. Add one with a short message and, if you like, more detail.</div></div></div>`}</div>`;
   }
   const src = Planner.source==='manual' ? `${new Set(Planner.data.slots.map(s=>s.label)).size} class codes typed in` : 'Not set up yet';
   return `<div class="set-head"><h2>General</h2></div>
@@ -2109,45 +2102,15 @@ app.addEventListener('click', async e=>{
     case 'timeleft': data.settings.showTimeLeft = b.dataset.v==='1'; saveSoon(); renderSettings(); break;
     case 'season': data.settings.season = b.dataset.v; delete data.settings.halloween; saveSoon(); renderSettings(); break;
     case 'beta': data.settings.beta = Object.assign({}, data.settings.beta, { [b.dataset.k]: b.dataset.v==='1' }); saveSoon(); renderSettings(); break;
-    case 'beta-all': data.settings.beta = {}; saveSoon(); renderSettings(); break;
+    case 'beta-all': data.settings.beta = Object.fromEntries(BETA.map(r=>[r[0], true])); saveSoon(); renderSettings(); break;
     case 'dual': await SVDual.setWanted(b.dataset.v==='1'); renderSettings(); break;
     case 'planner': openTimetable(); break;
     case 'folder': try{ await store.pick(); await loadAndGo(); }catch(err){ if(err.name!=='AbortError') toast(err.message, true); } break;
     case 'gc-add': if(window.SVChance) SVChance.editSet(null, ()=>renderSettings()); break;
     case 'gc-edit': if(window.SVChance && row) SVChance.editSet(row.dataset.id, ()=>renderSettings()); break;
     case 'gc-del': if(window.SVChance && row) SVChance.deleteSet(row.dataset.id, ()=>renderSettings()); break;
-    case 'idea-add': editIdea(null); break;
-    case 'idea-edit': { const idea = row && data.ideas.find(i=>i.id===row.dataset.id); if(idea) editIdea(idea); break; }
-    case 'idea-del': {
-      const idea = row && data.ideas.find(i=>i.id===row.dataset.id); if(!idea) break;
-      if(await confirmBox('Delete this idea?', idea.short, 'Delete', true)){ data.ideas = data.ideas.filter(i=>i!==idea); saveSoon(); }
-      renderSettings(); break;
-    }
   }
 });
-function editIdea(idea){
-
-  modal(`<h2>${idea ? 'Edit idea' : 'New idea'}</h2>
-    <div class="row"><div class="grow"><div class="t">Short message</div><div class="d">One line, e.g. "Seating plan tool"</div></div></div>
-    <input type="text" maxlength="120" aria-label="Short message" value="${esc(idea ? idea.short : '')}">
-    <div class="row" style="margin-top:14px"><div class="grow"><div class="t">Detailed message</div><div class="d">What it should do, how it should look, anything Claude needs to know (optional)</div></div></div>
-    <textarea class="np-ta idea-ta" aria-label="Detailed message">${esc(idea ? idea.detail : '')}</textarea>
-    <div class="foot"><button class="btn" data-a="no">Cancel</button><button class="btn primary" data-a="ok">Save</button></div>`, (m, close)=>{
-    const inp = m.querySelector('input'), ta = m.querySelector('textarea');
-    const ok = ()=>{
-      const short = inp.value.trim(), detail = ta.value.trim();
-      if(!short){ inp.focus(); toast('Add a short message first', true); return; }
-      if(idea){ idea.short = short; idea.detail = detail; }
-      else data.ideas.unshift({ id:'i' + uid(), short, detail });
-      saveSoon(); close(); renderSettings();
-    };
-    m.querySelector('[data-a=ok]').onclick = ok;
-    m.querySelector('[data-a=no]').onclick = close;
-    inp.onkeydown = e=>{ if(e.key==='Enter'){ e.preventDefault(); ta.focus(); } };
-    ta.onkeydown = e=>{ if(e.key==='Enter' && (e.ctrlKey || e.metaKey)) ok(); };
-    inp.focus();
-  });
-}
 function goFullscreen(){ const d = document.documentElement; if(!document.fullscreenElement && d.requestFullscreen) d.requestFullscreen().catch(()=>{}); }
 
 /* ---------- presenter ---------- */
