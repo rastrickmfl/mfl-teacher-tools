@@ -135,9 +135,9 @@ function renderHome(){
   const st = Store.state;
   let body = '';
   if(st !== 'ok'){
-    const msg = st === 'unsupported' ? 'This page needs Microsoft Edge (or Chrome) to save to your OneDrive folder.'
-      : st === 'prompt' ? 'Edge needs your permission again to use the Slideshow Viewer folder.'
-      : 'Choose the <b>Slideshow Viewer - Web App</b> folder (the same one the viewer uses). Sentence builders are saved in its <b>Sentence Builders</b> folder.';
+    const msg = st === 'unsupported' ? 'This page needs Microsoft Edge (or Chrome) to save to your data folder.'
+      : st === 'prompt' ? 'Edge needs your permission again to use your data folder.'
+      : 'Choose your data folder (the same one the viewer uses). Sentence builders are saved in its <b>Sentence Builders</b> folder.';
     body = `<div class="connect"><h2>Connect your folder</h2><p>${msg}</p><div class="btnrow">
       ${st === 'prompt' ? '<button class="sb-primary" data-a="reconnect">Reconnect</button>' : ''}
       ${st !== 'unsupported' ? `<button ${st === 'prompt' ? '' : 'class="sb-primary"'} data-a="pick">Choose folder</button>` : ''}

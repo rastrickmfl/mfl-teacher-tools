@@ -31,7 +31,7 @@ then visit `http://localhost:8000/`.
 
 ## Where data is stored
 
-In the browser only. This repository contains no data: no class lists, timetables or pupil information. Anything you create while using the app stays in your own browser.
+On your own computer only. The first time you open the app it asks you to choose a data folder; lesson decks, settings, pen marks, Waypoints and Sentence Builders are saved in that folder, and the browser remembers which folder you chose. A browser that supports folder access is needed (Edge or Chrome). Nothing is sent to a server. This repository contains no data: no class lists, timetables or pupil information. The `Sentence Builders/` and `Waypoints/` folders here are starter content; copy them into your data folder to use them. A new lesson also needs a `New lesson template.pptx` in your data folder, which is not included in version 1.
 
 ## Not included in version 1
 

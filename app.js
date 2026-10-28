@@ -1270,7 +1270,7 @@ function renderSplash(kind){
     <h1>${reconnect ? 'Welcome back' : 'Slideshow Viewer'}</h1>
     ${reconnect
       ? `<p>Edge needs your permission again to open <span class="path">${esc(store.name)}</span>. It forgets this when the browser is closed.</p>`
-      : `<p>Choose the folder this app lives in — <span class="path">Planner › Slideshow Viewer - Web App</span>. Lesson decks, hide settings and annotations are saved there, so OneDrive keeps every computer in step.</p>`}
+      : `<p>Choose a folder on this computer to keep your data in. Lesson decks, hide settings and annotations are saved there. If the folder is in OneDrive or similar, your other computers can use the same data.</p>`}
     <div class="actions">
       <button class="btn primary lg" data-a="go">${reconnect ? 'Reconnect' : 'Choose folder'}</button>
       ${reconnect ? '<button class="btn ghost" data-a="pick">Use a different folder</button>' : ''}
