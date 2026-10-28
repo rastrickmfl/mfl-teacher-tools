@@ -17,7 +17,7 @@ Summary
 | Geist font (embedded in fonts.css)| variable| SIL OFL 1.1              | fonts.css                                          | Geist-LICENSE.txt       |
 
 Not yet covered: vendor/docx-preview.min.js. It is used by the Printing Centre to
-lay out Word documents. Its licence has not been confirmed yet; see NEEDS_REVIEW.md.
+lay out Word documents. Its licence has not been confirmed yet.
 
 
 Mozilla pdf.js (Apache License 2.0)
