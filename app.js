@@ -337,6 +337,7 @@ function ttChoice(tt, row, day){
 }
 // P2 and Form start at one of two times, set by the class's year group: 7, 9 and 11 take the second time (P2 10:10, Form 12:50); 8 and 10 take the first (P2 09:55, Form 12:10).
 // A code that doesn't start with a year group (after any "Form ") has no rule, so the choice made in the editor is used.
+const NON_CLASS = { p:'PPA', f:'PPA', l:'L&M' }; // one letter typed in a lesson box fills in this (see classLabels: neither is a class)
 function ttRule(code){
   const y = /^(?:Form\s+)?(\d{1,2})/i.exec(String(code || '').trim());
   const n = y ? Number(y[1]) : 0;
@@ -427,7 +428,7 @@ function openTimetable(){
     const cur = ttChoice(tt, row, d);
     return `<span class="tt-auto" hidden></span><select class="tt-pick" data-pk="${row.key}" data-pd="${d}" aria-label="${DAYS[d-1]} ${row.name} time" hidden>${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select>`;
   };
-  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" autocomplete="off" aria-label="${DAYS[d-1]} ${row.name}"><span class="tt-ghost" aria-hidden="true"></span>${timePick(row, d)}</td>`).join('')}</tr>`).join('');
+  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" value="${esc(value(d, i))}" autocomplete="off" aria-label="${DAYS[d-1]} ${row.name}"><span class="tt-ghost" aria-hidden="true"></span>${timePick(row, d)}</td>`).join('')}</tr>`).join('');
   modal(`<h2>Your timetable</h2>
     <p>Type a class code in each lesson, like <b>8A/Fr1</b>, and leave free periods empty. Every code gets a class list in Settings → Classes.</p>
     <div class="tt-wrap"><table class="tt-grid"><thead><tr><th></th>${DAYS.map(d=>`<th>${d}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
@@ -446,7 +447,7 @@ function openTimetable(){
     const suggest = inp=>{
       const typed = inp.value; if(!typed.trim()) return '';
       const form = TT_ROWS[Number(inp.dataset.r)].form, count = new Map();
-      m.querySelectorAll('input[type=text]').forEach(o=>{ const v = o.value.trim(); if(o!==inp && v && TT_ROWS[Number(o.dataset.r)].form===form) count.set(v, (count.get(v) || 0) + 1); });
+      m.querySelectorAll('input[type=text]').forEach(o=>{ const v = o.value.trim(); if(o!==inp && v && !/^(PPA|L&M)$/i.test(v) && TT_ROWS[Number(o.dataset.r)].form===form) count.set(v, (count.get(v) || 0) + 1); });
       let best = '';
       for(const [v, n] of count) if(v.length > typed.length && v.toLowerCase().startsWith(typed.toLowerCase()) && (!best || n > count.get(best) || (n===count.get(best) && v < best))) best = v;
       return best;
@@ -482,6 +483,9 @@ function openTimetable(){
     colourise();
     m.addEventListener('input', e=>{
       const inp = e.target; if(!inp.matches('input[type=text]')) return;
+      // A lesson box: P or F fills in PPA, L fills in L&M. These are not classes (no class list), but they show on the dashboard.
+      const short = TT_ROWS[Number(inp.dataset.r)].form ? null : NON_CLASS[inp.value.toLowerCase()];
+      if(short && inp.value.length===1 && e.inputType!=='deleteContentBackward') inp.value = short;
       if(inp.dataset.r===String(formRow)){
         const d = Number(inp.dataset.d);
         if(d===1){ for(const x of [2, 3, 4, 5]) if(!handTyped.has(x)){ formBox(x).value = inp.value; showTimes(formBox(x).closest('td')); } }
