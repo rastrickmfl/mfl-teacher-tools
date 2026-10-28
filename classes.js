@@ -624,8 +624,8 @@ function mainHTML(){
 }
 function pasteHTML(first){
   return `<div class="cls-paste">
-    ${first ? `<p>Paste the class list from your MIS export: one pupil per line, or columns copied from Excel. “Surname, Forename”, “Forename Surname” and a header row with Forename / Surname / Preferred forename columns all work.</p>` : ''}
-    <textarea placeholder="Smith, Amelia&#10;Jones, Ben&#10;…" spellcheck="false"></textarea>
+    ${first ? `<ol class="cls-steps"><li>Type in the pupils' names, one pupil per line. Just use first names, or first name + initial if there is more than one pupil with the same name (e.g. Alex A, Alex B).</li><li>Paste the names from a spreadsheet. If surnames are included, they will automatically be removed and replaced with an initial if there is more than one pupil with the same name.</li></ol>` : ''}
+    <textarea placeholder="Amelia&#10;Alex A&#10;Alex B&#10;…" spellcheck="false"></textarea>
     <div class="row-btns"><span class="note">Only the first name and the first letter of the surname are saved. The letter shows only when two pupils share a first name.</span><button class="btn primary" data-c="preview">Check names…</button></div>
   </div>`;
 }

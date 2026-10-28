@@ -1903,3 +1903,6 @@ body:not(.presenting) .gc-float, body:not(.presenting) .gc-back{ display:none; }
 .ed-crop-ghost img{ position:absolute; left:0; top:0; width:100%; height:100%; display:block; max-width:none; }
 .ed-obj.crop{ background:none; outline:2px solid var(--accent); outline-offset:0; overflow:visible; cursor:default; }
 .ed-crop-h{ position:absolute; width:14px; height:14px; transform:translate(-50%,-50%); background:#fff; border:2px solid var(--accent); border-radius:3px; box-sizing:border-box; touch-action:none; z-index:2; }
+
+.cls-steps{ margin:0 0 12px; padding-left:22px; }
+.cls-steps li{ margin-bottom:6px; }
