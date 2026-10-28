@@ -11,6 +11,8 @@
 'use strict';
 const APP_VERSION = '1.108';
 const TEST = /[?&]test\b/.test(location.search);
+const DEMO_URL = /[?&]demo\b/.test(location.search); // test mode for showing teachers (demo.js)
+const SHOW_SYNC = false; // true brings back the start screen's folder options ("Choose folder" / "Reconnect")
 // Dual screen: the pupil window (on the panel) is this same page opened with ?screen=pupil by the console (dual.js).
 const PUPIL = /[?&]screen=pupil\b/.test(location.search);
 
@@ -621,7 +623,7 @@ async function writeNow(base){
 // start it now and ask Edge to check first. Not the pupil window while it's linked (it hands its data
 // to the teacher screen on pagehide, dual.js), and not the Refresh button (it saves before reloading).
 window.addEventListener('beforeunload', e=>{
-  if(!data || TEST || (PUPIL && !(window.SVDual && SVDual.detached))) return;
+  if(!data || TEST || window.SV_DEMO || (PUPIL && !(window.SVDual && SVDual.detached))) return;
   if(!saveTimer && !saveBusy) return;
   if(saveTimer) saveNow();
   e.preventDefault(); e.returnValue = '';
@@ -1406,6 +1408,15 @@ function renderSplash(kind){
   document.body.classList.remove('presenting');
   if(kind==='unsupported'){
     app.innerHTML = `<div class="splash"><div class="splash-card"><h1>Open this in Edge</h1><p>This browser can't save to your OneDrive folder. Open <span class="path">index.html</span> in Microsoft Edge or Google Chrome.</p></div></div>`;
+    return;
+  }
+  if(!SHOW_SYNC){ // test mode only for now: the folder options come back when SHOW_SYNC is turned on
+    app.innerHTML = `<div class="splash"><div class="splash-card">
+      <h1>MFL Teacher Tools</h1>
+      <p>Try the app with a made-up timetable, sample classes and sample lessons. Nothing you do in test mode is kept: refresh the page and it starts again.</p>
+      <div class="actions"><button class="btn primary lg" data-a="demo">Enter test mode</button></div>
+    </div></div>`;
+    app.querySelector('[data-a=demo]').onclick = ()=>{ if(window.SVDemo) SVDemo.enter(); };
     return;
   }
   const reconnect = kind==='reconnect';
@@ -8335,6 +8346,11 @@ async function boot(){
     return window.SVDual.bootPupil();
   }
   if(!store.supported){ renderSplash('unsupported'); return; }
+  if(DEMO_URL){ // index.html?demo goes straight into test mode (demo.js loads after this file)
+    renderSplash('setup');
+    if(document.readyState!=='complete') await new Promise(r=>window.addEventListener('load', r, { once:true }));
+    if(window.SVDemo) return SVDemo.enter();
+  }
   const st = await store.restore();
   await Planner.restore();
   if(st==='none') renderSplash('setup');
@@ -8415,6 +8431,8 @@ window.SVCore = {
   // Replace the data (pupil: from the console; console: the pupil's latest). save: write it to the folder now.
   adopt(d, save, base){ data = normalise(d); undoKeep.clear(); if(!save) pupilBase = SVSync.mainText(data); if(save) return saveNow(base); },
   get pupilBase(){ return pupilBase; }, pupilSent(d){ pupilBase = SVSync.mainText(d); }, syncIn,
+  // demo.js: open the app on made-up data (the timetable is applied; the caller adds decks, then draws the dashboard).
+  async startDemo(d){ data = normalise(d); Planner.applyManual(data.timetable); undoKeep.clear(); await saveNow(); },
   setPlanner(p){ if(p && Planner.valid(p)){ Planner.data = p; Planner.source = 'file'; Planner.needsPerm = false; } },
   get planner(){ return Planner.data; },
   setDate(s){ selDate = fromIso(s); },

@@ -23,7 +23,9 @@ async function readMarker(root){
   try{ return JSON.parse(await (await (await root.getFileHandle(MARKER)).getFile()).text()); }catch(e){ return null; }
 }
 
-async function seed(root){
+// opts.skip(path): true for a file that should not be copied (test mode leaves the Waypoints out).
+async function seed(root, opts){
+  const skip = opts && opts.skip;
   if(!root || !/^https?:$/.test(location.protocol)) return 0;
   let man;
   try{ const r = await fetch(MANIFEST, { cache:'no-cache' }); if(!r.ok) return 0; man = await r.json(); }catch(e){ return 0; }
@@ -33,7 +35,7 @@ async function seed(root){
   const done = new Set(marker.files);
   let copied = 0;
   for(const path of man.files){
-    if(done.has(path)) continue;
+    if(done.has(path) || (skip && skip(path))) continue;
     try{
       if(!(await exists(root, path))){
         const r = await fetch(path.split('/').map(encodeURIComponent).join('/'));

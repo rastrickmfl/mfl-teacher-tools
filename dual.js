@@ -110,7 +110,7 @@ function present(id){
   }
   // Open the window inside the click (pop-up blocker), then move it to the panel.
   let w = null;
-  try{ w = window.open('index.html?screen=pupil' + (C.TEST ? '&test' : ''), 'svpupil', `popup,width=1280,height=720,left=${(screen.availLeft || 0) + 60},top=${(screen.availTop || 0) + 60}`); }catch(e){}
+  try{ w = window.open('index.html?screen=pupil' + (C.TEST || window.SV_DEMO ? '&test' : ''), 'svpupil', `popup,width=1280,height=720,left=${(screen.availLeft || 0) + 60},top=${(screen.availTop || 0) + 60}`); }catch(e){}
   if(!w){
     toast("Edge blocked the pupil window, so this is single screen. Allow pop-ups for this page (icon at the right of the address bar).", true);
     C.goFullscreen(); C.openPresenter(id);

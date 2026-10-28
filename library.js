@@ -1802,7 +1802,8 @@
   window.SVLibrary = { canCreate, openCreate, ensureFixed, FIXED_FOLDERS, LIB_DIR, TEMPLATE, halfTermOf, DRAG_TYPE,
     topButton, toggle, mountPanel, isOpen:()=>S.open && canCreate(), openChoose, dropOnSlot, lessonMenu, backFromEditor, openSave, scan,
     openFull, closeFull, fullOpen, renderFull, // v1.85
-    pullBadge, openPull }; // v1.86
+    pullBadge, openPull, // v1.86
+    copyToLesson }; // demo.js
   // If the dashboard was drawn before this file loaded, draw it again so the Create / Library buttons show.
   if(C.view && C.view.name==='dash') C.renderDashboard();
 })();

@@ -30,6 +30,10 @@ then visit `http://localhost:8000/`.
 - **Printing.** 2x2 handouts and single slides, and the Printing Centre.
 - **Dual screen.** A separate pupil window.
 
+## Test mode
+
+The start screen offers **Enter test mode** (or open index.html?demo). It opens the app on made-up data: a timetable of eight classes, 30 sample pupils in each, and a sample lesson in every timetabled lesson this week and next. The sample lesson is also in the Lesson Library under Other, so editing it there shows **Master updated** on the lessons. Nothing is kept: refresh the page and test mode starts again from the start screen. It uses the browser's private storage, never a chosen folder, and needs the app served over http in Edge or Chrome. The sample deck is demo/Demo lesson.pptx. The folder options on the start screen are hidden for now (SHOW_SYNC in pp.js).
+
 ## Where data is stored
 
 On your own computer only. The first time you open the app it asks you to choose a data folder; lesson decks, settings, pen marks, Waypoints and Sentence Builders are saved in that folder, and the browser remembers which folder you chose. A browser that supports folder access is needed (Edge or Chrome). Nothing is sent to a server. This repository contains no data: no class lists, timetables or pupil information. The `Sentence Builders/` and `Waypoints/` folders here are starter content. When the app is served over http, it copies them into your data folder the first time it opens that folder (it never overwrites a file you already have, and never puts back one you have changed or deleted). Your own Sentence Builders and Waypoints, and any edits you make, live in your data folder. When you open the app straight from disk, copy these two folders into your data folder by hand instead. A new lesson starts as an empty deck; templates are not included in version 1.
