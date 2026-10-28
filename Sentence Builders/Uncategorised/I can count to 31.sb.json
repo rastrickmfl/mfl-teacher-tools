@@ -1,0 +1,469 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can count to 31",
+ "q": {
+  "tl": "I can count to 31",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "a58ezgjw",
+   "title": "16–20",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "seize",
+      "en": "16",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "sez",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-sept",
+      "en": "17",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-huit",
+      "en": "18",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-neuf",
+      "en": "19",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt",
+      "en": "20",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "u4yiyy6v",
+   "title": "21–25",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "vingt-et-un",
+      "en": "21",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 7,
+        "e": 8,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 8,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 11,
+        "p": "uhn",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-deux",
+      "en": "22",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "duh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-trois",
+      "en": "23",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 11,
+        "p": "trwah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-quatre",
+      "en": "24",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 12,
+        "p": "KAH-truh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-cinq",
+      "en": "25",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "sank",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "b2c2m04l",
+   "title": "26–31",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "vingt-six",
+      "en": "26",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "sees",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-sept",
+      "en": "27",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-huit",
+      "en": "28",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-neuf",
+      "en": "29",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trente",
+      "en": "30",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trahnt",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trente-et-un",
+      "en": "31",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trahnt",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 9,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "uhn",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458442,
+ "uncat": true
+}

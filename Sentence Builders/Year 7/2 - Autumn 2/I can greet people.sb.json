@@ -1,0 +1,365 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "2 - Autumn 2",
+ "title": "I can greet people",
+ "q": {
+  "tl": "I can greet people",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "1wbqc86o",
+   "title": "Greeting",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Bonjour !",
+      "en": "Hello!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "bohn-ZHOOR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Coucou !",
+      "en": "Hey!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "koo-KOO",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Salut !",
+      "en": "Hi!",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "sah-LOO",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "awu0ms6y",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Ça va ?",
+      "en": "How are you?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "vah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "ztktceng",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Oui, ça va bien, merci !",
+      "en": "I am well thanks !",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "wee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "vah",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "byan",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 22,
+        "p": "mair-SEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Oui, ça va très bien, merci !",
+      "en": "Yes, I am very well, thanks!",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 14,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "wee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "vah",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "treh",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 20,
+        "p": "byan",
+        "on": false
+       },
+       {
+        "s": 22,
+        "e": 27,
+        "p": "mair-SEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Non, ça ne va pas.",
+      "en": "No, it’s not going well.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 17,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "nohn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "nuh",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "vah",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 17,
+        "p": "pah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Non, ça va mal.",
+      "en": "No, it’s going badly.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "nohn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "vah",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "mahl",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "uokdkeg0",
+   "title": "Question / Goodbye",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Et toi ?",
+      "en": "And you?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "twah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Au revoir !",
+      "en": "Goodbye!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "ruh-VWAHR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "À plus !",
+      "en": "See you later!",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 6,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 1,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 2,
+        "e": 6,
+        "p": "ploo",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458435
+}

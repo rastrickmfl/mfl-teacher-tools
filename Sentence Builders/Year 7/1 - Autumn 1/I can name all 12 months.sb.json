@@ -1,0 +1,205 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can name all 12 months",
+ "q": {
+  "tl": "I can name all 12 months",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "mcnhmowf",
+   "title": "Month",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "enero",
+      "en": "January",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "eh-NEH-roh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "febrero",
+      "en": "February",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "feh-BREH-roh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "marzo",
+      "en": "March",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "MAR-thoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "abril",
+      "en": "April",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "ah-BREEL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "mayo",
+      "en": "May",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "MAH-yoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "junio",
+      "en": "June",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "HOO-nyoh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "g7bhoo7g",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "julio",
+      "en": "July",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "HOO-lyoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "agosto",
+      "en": "August",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "ah-GOSS-toh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "septiembre",
+      "en": "September",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "sep-TYEM-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "octubre",
+      "en": "October",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "ok-TOO-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "noviembre",
+      "en": "November",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "noh-BYEM-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diciembre",
+      "en": "December",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "dee-THYEM-breh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

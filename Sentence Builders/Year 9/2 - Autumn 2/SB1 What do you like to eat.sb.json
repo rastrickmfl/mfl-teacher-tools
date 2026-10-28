@@ -1,0 +1,1408 @@
+{
+  "v": 1,
+  "lang": "es",
+  "year": 9,
+  "term": "2 - Autumn 2",
+  "tier": "",
+  "title": "SB1 What do you like to eat",
+  "q": {
+    "tl": "¿Qué te gusta comer?",
+    "en": "What do you like to eat?"
+  },
+  "paper": "auto",
+  "size": "auto",
+  "cols": [
+    {
+      "id": "pttmna5k",
+      "title": "Time phrase",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "Para el desayuno",
+            "en": "For breakfast",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "el",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 16,
+                "p": "deh-sah-YOO-noh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Para el almuerzo",
+            "en": "For lunch",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "el",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 16,
+                "p": "al-MWEHR-thoh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Para la cena",
+            "en": "For dinner",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 12,
+                "p": "THEH-nah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Para la merienda",
+            "en": "For a snack",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 16,
+                "p": "meh-RYEN-dah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Cuando tengo hambre",
+            "en": "When I am hungry",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 13,
+                "e": 14,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "KWAN-doh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 12,
+                "p": "TEN-goh",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 19,
+                "p": "AM-breh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Cuando tengo sed",
+            "en": "When I am thirsty",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "KWAN-doh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 12,
+                "p": "TEN-goh",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 16,
+                "p": "SED",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "z8xukvq0",
+      "title": "Verb",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "como",
+            "en": "I eat",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "KOH-moh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "me encanta comer",
+            "en": "I love to eat",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "meh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "en-KAN-tah",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 16,
+                "p": "koh-MEHR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "odio comer",
+            "en": "I hate to eat",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "OH-dyoh",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 10,
+                "p": "koh-MEHR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "bebo",
+            "en": "I drink",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "BEH-boh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "me encanta beber",
+            "en": "I love to drink",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "meh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "en-KAN-tah",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 16,
+                "p": "beh-BEHR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "detesto beber",
+            "en": "I hate to drink",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "deh-TES-toh",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 13,
+                "p": "beh-BEHR",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "yu3lvdyf",
+      "title": "Noun (food/drink) without definite article",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "agua",
+            "en": "water",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 4,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "AH-gwah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "arroz",
+            "en": "rice",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "ah-RROTH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "carne",
+            "en": "meat",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "KAR-neh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "ensalada",
+            "en": "salad",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "en-sah-LAH-dah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "fruta",
+            "en": "fruit",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "FROO-tah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "helado",
+            "en": "ice cream",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 1,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 1,
+                "e": 6,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "eh-LAH-doh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "leche",
+            "en": "milk",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "LEH-cheh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "mermelada",
+            "en": "jam",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 9,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "mehr-meh-LAH-dah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pan",
+            "en": "bread",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 3,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "PAN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pescado",
+            "en": "fish",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 7,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "pes-KAH-doh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pizza",
+            "en": "pizza",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "PEET-sah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pollo",
+            "en": "chicken",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "POH-yoh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "queso",
+            "en": "cheese",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 1,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 1,
+                "e": 2,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 2,
+                "e": 5,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "KEH-soh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "té",
+            "en": "tea",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 2,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "TEH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "zumo de naranja",
+            "en": "orange juice",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 7,
+                "c": "b"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "THOO-moh",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "deh",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 15,
+                "p": "nah-RAN-hah",
+                "on": false
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "tl": "bebidas gaseosas",
+            "en": "fizzy drinks",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 16,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "beh-BEE-dahs",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 16,
+                "p": "gah-seh-OH-sahs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "caramelos",
+            "en": "sweets",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 9,
+                "c": "g"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "kah-rah-MEH-lohs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "hamburguesas",
+            "en": "burgers",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 1,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 1,
+                "e": 7,
+                "c": "p"
+              },
+              {
+                "lang": "tl",
+                "s": 7,
+                "e": 8,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 8,
+                "e": 12,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 12,
+                "p": "am-boor-GEH-sahs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "huevos",
+            "en": "eggs",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 1,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 1,
+                "e": 6,
+                "c": "g"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "WEH-bohs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pasteles",
+            "en": "cakes",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "g"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "pas-TEH-les",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "patatas fritas",
+            "en": "chips",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 14,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "pah-TAH-tahs",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 14,
+                "p": "FREE-tahs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "verduras",
+            "en": "vegetables",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "behr-DOO-rahs",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "h623lkjk",
+      "title": "Reason why",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "porque es",
+            "en": "because it is",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "POR-keh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 9,
+                "p": "ess",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "ya que es",
+            "en": "since it is",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "yah",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "keh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 9,
+                "p": "ess",
+                "on": false
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "tl": "porque son",
+            "en": "because they are",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "POR-keh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 10,
+                "p": "son",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "ya que son",
+            "en": "since they are",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "yah",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "keh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 10,
+                "p": "son",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "iklcgpxb",
+      "title": "Adjective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "azucarado/azucarada.",
+            "en": "sugary.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 9,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 10,
+                "e": 19,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 19,
+                "p": "ah-thoo-kah-RAH-doh/dah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "bueno/buena para la salud.",
+            "en": "good for your health.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 6,
+                "e": 11,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 11,
+                "p": "BWEH-noh/nah",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 16,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 19,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "sah-LOOD",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "dulce.",
+            "en": "sweet.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "DOOL-theh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "equilibrado/equilibrada.",
+            "en": "balanced.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 2,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 2,
+                "e": 3,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 11,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 12,
+                "e": 14,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 14,
+                "e": 15,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 15,
+                "e": 23,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 23,
+                "p": "eh-kee-lee-BRAH-doh/dah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "fresco/fresca.",
+            "en": "fresh.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 6,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 7,
+                "e": 13,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 13,
+                "p": "FRES-koh/kah",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "malo/mala para la salud.",
+            "en": "bad for your health.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 4,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 5,
+                "e": 9,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "MAH-loh/lah",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 14,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 17,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 23,
+                "p": "sah-LOOD",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "salado/salada.",
+            "en": "salty.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 6,
+                "c": "b"
+              },
+              {
+                "lang": "tl",
+                "s": 7,
+                "e": 13,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 13,
+                "p": "sah-LAH-doh/dah",
+                "on": false
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "tl": "asquerosos/asquerosas.",
+            "en": "disgusting.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 3,
+                "c": "g"
+              },
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 4,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 10,
+                "c": "g"
+              },
+              {
+                "lang": "tl",
+                "s": 11,
+                "e": 14,
+                "c": "p"
+              },
+              {
+                "lang": "tl",
+                "s": 14,
+                "e": 15,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 15,
+                "e": 21,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 21,
+                "p": "as-keh-ROH-sohs/sahs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "buenos/buenas para la salud.",
+            "en": "good for your health.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 6,
+                "c": "g"
+              },
+              {
+                "lang": "tl",
+                "s": 7,
+                "e": 13,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 13,
+                "p": "BWEH-nohs/nahs",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 18,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 21,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 27,
+                "p": "sah-LOOD",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "deliciosos/deliciosas.",
+            "en": "delicious.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 10,
+                "c": "g"
+              },
+              {
+                "lang": "tl",
+                "s": 11,
+                "e": 21,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 21,
+                "p": "deh-lee-THYOH-sohs/sahs",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "malos/malas para la salud.",
+            "en": "bad for your health.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "g"
+              },
+              {
+                "lang": "tl",
+                "s": 6,
+                "e": 11,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 11,
+                "p": "MAH-lohs/lahs",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 16,
+                "p": "PAH-rah",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 19,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "sah-LOOD",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "updated": 1792517285887
+}

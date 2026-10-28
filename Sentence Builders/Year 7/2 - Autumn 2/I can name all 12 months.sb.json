@@ -1,0 +1,242 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "2 - Autumn 2",
+ "title": "I can name all 12 months",
+ "q": {
+  "tl": "I can name all 12 months",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "wr4a8gyp",
+   "title": "January–April",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "janvier",
+      "en": "January",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zhahn-VYAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "février",
+      "en": "February",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "FAY-vree-AY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "mars",
+      "en": "March",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "mahrs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "avril",
+      "en": "April",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "ah-VREEL",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "phg9m1yc",
+   "title": "May–August",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "mai",
+      "en": "May",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "may",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "juin",
+      "en": "June",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhwan",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "juillet",
+      "en": "July",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zhwee-YAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "août",
+      "en": "August",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "oo",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "5suf1tzv",
+   "title": "September–December",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "septembre",
+      "en": "September",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "sep-TAHN-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "octobre",
+      "en": "October",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "ok-TOH-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "novembre",
+      "en": "November",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "noh-VAHN-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "décembre",
+      "en": "December",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "day-SAHN-bruh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458444
+}

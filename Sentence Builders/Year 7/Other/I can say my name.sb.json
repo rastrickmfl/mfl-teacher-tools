@@ -1,0 +1,126 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "Other",
+ "title": "I can say my name",
+ "q": {
+  "tl": "I can say my name",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "vj48hw2w",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Comment t’appelles-tu ?",
+      "en": "What is your name?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 17,
+        "e": 18,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "kom-MAHN",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 21,
+        "p": "tah-PEL-too",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "bjana66i",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Je m’appelle ________.",
+      "en": "I call myself…",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "mah-PEL",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "dlggkmk2",
+   "title": "And you?",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Et toi ?",
+      "en": "And you?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "twah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458438
+}

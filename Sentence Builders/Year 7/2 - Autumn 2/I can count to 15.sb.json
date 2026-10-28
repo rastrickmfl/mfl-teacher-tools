@@ -1,0 +1,277 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "2 - Autumn 2",
+ "title": "I can count to 15",
+ "q": {
+  "tl": "I can count to 15",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "r9pu8da1",
+   "title": "1–5",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "un",
+      "en": "1",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "deux",
+      "en": "2",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "duh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trois",
+      "en": "3",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "trwah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quatre",
+      "en": "4",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KAH-truh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cinq",
+      "en": "5",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "sank",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "l4iw94pv",
+   "title": "6–10",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "six",
+      "en": "6",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "sees",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "sept",
+      "en": "7",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "huit",
+      "en": "8",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 1,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "neuf",
+      "en": "9",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix",
+      "en": "10",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "tlxuu0h8",
+   "title": "11–15",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "onze",
+      "en": "11",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "ohnz",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "douze",
+      "en": "12",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "dooz",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treize",
+      "en": "13",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trez",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quatorze",
+      "en": "14",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "kah-TORZ",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quinze",
+      "en": "15",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "kanz",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458439
+}

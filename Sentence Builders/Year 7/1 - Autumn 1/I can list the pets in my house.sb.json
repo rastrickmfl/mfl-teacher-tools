@@ -1,0 +1,382 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can list the pets in my house",
+ "q": {
+  "tl": "I can list the pets in my house",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "z8z915ke",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Tienes mascotas?",
+      "en": "Do you have any pets?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 7,
+        "p": "TYEH-ness",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 16,
+        "p": "mas-KOH-tahs",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "jr3gia2e",
+   "title": "Place",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "En mi casa",
+      "en": "In my house",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "en",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "mee",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "KAH-sah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "En mi familia",
+      "en": "In my family",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "en",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "mee",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 13,
+        "p": "fah-MEE-lyah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rl9lpyri",
+   "title": "Verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "hay",
+      "en": "there is",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 1,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "eye",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "tengo",
+      "en": "I have",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "TEN-goh",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "no tengo mascota.",
+      "en": "I don’t have a pet.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "noh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "TEN-goh",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 16,
+        "p": "mas-KOH-tah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "rcgjuhmn",
+   "title": "Pet",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "un caballo.",
+      "en": "a horse.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "kah-BAH-yoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un conejo.",
+      "en": "a rabbit.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "koh-NEH-hoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un gato.",
+      "en": "a cat.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "GAH-toh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un hámster.",
+      "en": "a hamster.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "HAHM-stair",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un pájaro.",
+      "en": "a bird.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "PAH-hah-roh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "oj7r5k7f",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "un perro.",
+      "en": "a dog.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "PEH-rroh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un pez.",
+      "en": "a fish.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "peth",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "una serpiente.",
+      "en": "a snake.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "OO-nah",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 13,
+        "p": "sair-PYEN-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "una tortuga.",
+      "en": "a tortoise.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "OO-nah",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "tor-TOO-gah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

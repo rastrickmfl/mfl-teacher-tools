@@ -1,0 +1,265 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can greet people",
+ "q": {
+  "tl": "I can greet people",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "5jbmn66a",
+   "title": "Greeting",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¡Hola!",
+      "en": "Hello!",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 1,
+        "e": 5,
+        "p": "OH-lah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Buenos días!",
+      "en": "Good morning!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 7,
+        "p": "BWEH-nohs",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 12,
+        "p": "DEE-ahs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Buenas tardes!",
+      "en": "Good afternoon!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 7,
+        "p": "BWEH-nahs",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 14,
+        "p": "TAR-dess",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "jwn06smj",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Qué tal?",
+      "en": "How are you?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 1,
+        "e": 4,
+        "p": "keh",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "tahl",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "6foclxki",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¡Bien, gracias!",
+      "en": "Well, thanks!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 5,
+        "p": "byen",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 14,
+        "p": "GRAH-thee-ahs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Muy bien, gracias!",
+      "en": "Very well, thanks!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 4,
+        "p": "mwee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "byen",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 18,
+        "p": "GRAH-thee-ahs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Fatal!",
+      "en": "Awful!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 6,
+        "p": "fah-TAHL",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "0ln8tb1e",
+   "title": "Question / Goodbye",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Y tú?",
+      "en": "And you?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 2,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "too",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Adiós!",
+      "en": "Goodbye!",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 6,
+        "p": "ah-DYOSS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "¡Hasta luego!",
+      "en": "See you later!",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 1,
+        "e": 6,
+        "p": "AHS-tah",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 12,
+        "p": "LWEH-goh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478300
+}

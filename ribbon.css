@@ -1,0 +1,315 @@
+/* ribbon.css — v1.87 slide editor ribbon redesign, phase 1 (2026-10-25). Loaded last, after refresh.css.
+   Spec: ribbon-redesign-spec.md (§1 visual language, §2 year accent, §3 title bar). Editor only: everything is under .editor.
+   Phase 1 restyles the existing tabs and groups; the Slides tab, the Reveal tab and Lists ▾ are untouched (later phases).
+   Removing this file's <link> in index.html undoes the look. */
+
+/* ---------- §1 tokens ---------- */
+:root{
+  --ed-ground:#F7F7F8; --ed-panel:#FFFFFF; --ed-pill:#F1F1F4; --ed-hover:#E7E7EC; /* v1.87d: bright and clean, the same neutrals as the rest of the app (--bg, --sunken, --border); the spec had #EFEDE5 / #F6F5F0 / #E8E6DF / #DEDCD4 */
+  --ed-hair:#EBEBEF; --ed-hair-2:#DEDEE4;
+  --ed-ink:#1B1B19; --ed-text-2:#6B6A64; --ed-text-3:#4A4944; --ed-danger:#B42318;
+  --ed-r-pill:12px; --ed-r-btn:10px; --ed-r-tab:9px;
+  --ed-font:var(--font);
+}
+
+/* ---------- §2 year accent: the editor's --accent vars follow the lesson's year ---------- */
+.editor{ --accent:#2A2A27; --accent-ink:#2A2A27; --accent-soft:#E4E2DA; --accent-hover:color-mix(in srgb, var(--accent) 85%, #000); }
+.menu[data-yr]{ --accent-hover:color-mix(in srgb, var(--accent) 85%, #000); } /* menus and popovers are outside .editor; app.js gives them its data-yr */
+.editor[data-yr="7"], .menu[data-yr="7"]{ --accent:#4E6B1A; --accent-ink:#4E6B1A; --accent-soft:#EEF6DC; }
+.editor[data-yr="8"], .menu[data-yr="8"]{ --accent:#0A5E70; --accent-ink:#0A5E70; --accent-soft:#E0F0F3; }
+.editor[data-yr="9"], .menu[data-yr="9"]{ --accent:#8E1460; --accent-ink:#8E1460; --accent-soft:#F7E1EE; }
+.editor[data-yr="10"], .menu[data-yr="10"]{ --accent:#5A2A57; --accent-ink:#5A2A57; --accent-soft:#EEE4ED; }
+.editor[data-yr="11"], .menu[data-yr="11"]{ --accent:#34506B; --accent-ink:#34506B; --accent-soft:#E2E9F0; }
+.editor[data-yr="none"], .menu[data-yr="none"]{ --accent:#2A2A27; --accent-ink:#2A2A27; --accent-soft:#E4E2DA; }
+
+/* the old hard-coded blue selection tints follow the year accent too */
+.editor .ed-obj.sel.multi{ background:color-mix(in srgb, var(--accent) 8%, transparent); }
+.editor .ed-grpbox{ border-color:color-mix(in srgb, var(--accent) 70%, transparent); }
+.editor .ed-marq{ background:color-mix(in srgb, var(--accent) 8%, transparent); }
+.editor .sv-field{ background:color-mix(in srgb, var(--accent) 14%, transparent); box-shadow:0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent); }
+.editor .ed-cell, .editor.cell-mode .ed-cell{ background:color-mix(in srgb, var(--accent) 30%, transparent); }
+.editor .ed-cellmark.toggle{ background:color-mix(in srgb, var(--accent) 6%, transparent); }
+
+/* ---------- dark mode (editor only), tinted by the year colour ----------
+   app.js puts data-theme="dark" on .editor, and copies it with data-yr onto menus, dialogs and tooltips (they live outside .editor).
+   The year's colour is lightened for a dark ground and mixed into every dark neutral, so a Y9 lesson is a deep plum, a Y8 lesson a deep teal. */
+[data-theme="dark"][data-yr="7"]{ --accent:#A9D65C; --accent-ink:#A9D65C; --accent-soft:#26331A; }
+[data-theme="dark"][data-yr="8"]{ --accent:#5CC4D8; --accent-ink:#5CC4D8; --accent-soft:#123340; }
+[data-theme="dark"][data-yr="9"]{ --accent:#F07CC0; --accent-ink:#F07CC0; --accent-soft:#3D1B30; }
+[data-theme="dark"][data-yr="10"]{ --accent:#C990C6; --accent-ink:#C990C6; --accent-soft:#2F1D2E; }
+[data-theme="dark"][data-yr="11"]{ --accent:#8FB4DA; --accent-ink:#8FB4DA; --accent-soft:#1C2C3E; }
+[data-theme="dark"][data-yr="none"]{ --accent:#E4E2DA; --accent-ink:#E4E2DA; --accent-soft:#34342F; }
+[data-theme="dark"]{
+  color-scheme:dark;
+  --ed-ground:color-mix(in srgb, var(--accent) 5%, #121214);
+  --ed-panel:color-mix(in srgb, var(--accent) 6%, #1B1B1E);
+  --ed-pill:color-mix(in srgb, var(--accent) 9%, #29292D);
+  --ed-hover:color-mix(in srgb, var(--accent) 14%, #35353B);
+  --ed-hair:color-mix(in srgb, var(--accent) 8%, #2C2C31);
+  --ed-hair-2:color-mix(in srgb, var(--accent) 10%, #3C3C43);
+  --ed-ink:#F3F3F5; --ed-text-2:#A8A8B3; --ed-text-3:#D0D0D7; --ed-danger:#FF7B6E;
+  --accent-on:#111113; --accent-hover:color-mix(in srgb, var(--accent) 85%, #fff);
+  /* the app's own variables, so everything inside the editor that uses them (strip, notes, galleries, dialogs) goes dark too */
+  --bg:var(--ed-ground); --surface:var(--ed-panel); --sunken:var(--ed-pill); --border:var(--ed-hair); --border-strong:var(--ed-hair-2);
+  --text:var(--ed-ink); --text-2:var(--ed-text-2); --text-3:#8D8D99; --danger:var(--ed-danger); --danger-soft:#43211F;
+  --shadow-float:0 12px 32px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.3);
+}
+/* light mode: the pills and the hover colour carry a faint wash of the year colour (dark mode does the same above) */
+.editor:not([data-theme="dark"]), .menu[data-yr]:not([data-theme="dark"]){
+  --ed-pill:color-mix(in srgb, var(--accent) 7%, #F1F1F4);
+  --ed-hover:color-mix(in srgb, var(--accent) 12%, #E7E7EC);
+  --ed-hair-2:color-mix(in srgb, var(--accent) 8%, #DEDEE4);
+}
+.modal-back[data-theme="dark"]{ background:rgba(0,0,0,.6); }
+.sv-tip[data-theme="dark"]{ background:#F3F3F5; color:#141416; box-shadow:0 4px 14px rgba(0,0,0,.5); }
+.sv-tip[data-theme="dark"] span{ color:#5C5C66; }
+.editor[data-theme="dark"] .ed-stage .stage-frame{ box-shadow:0 2px 18px rgba(0,0,0,.55); }
+.editor[data-theme="dark"] .ed-sbview{ background:#000; } /* the Sentence Builder board's surround (the board itself keeps its own colours) */
+.editor[data-theme="dark"] .ed-thumb .n{ color:var(--ed-text-2); }
+.editor[data-theme="dark"] .ed-obj.sel.multi, .editor[data-theme="dark"] .ed-marq{ background:color-mix(in srgb, var(--accent) 14%, transparent); }
+
+/* ---------- grounds and panels ---------- */
+.editor{ background:var(--ed-ground); color:var(--ed-ink); font-family:var(--ed-font); }
+.editor .ico{ stroke-width:1.75; }
+.ed-stage{ background:var(--ed-ground); }
+.ed-status{ background:var(--ed-ground); color:var(--ed-text-2); }
+.ed-thumbs{ background:var(--ed-panel); border-right-color:var(--ed-hair); }
+.ed-thumbs:not(.focus) .ed-thumb.on .th{ outline-color:color-mix(in srgb, var(--accent) 45%, #fff); }
+.ed-notes, .ed-nbar{ background:var(--ed-panel); border-color:var(--ed-hair); }
+.ed-nbar:hover{ background:var(--ed-pill); }
+
+/* ---------- §3 title bar, 56px ---------- */
+.ed-top{ height:56px; box-sizing:border-box; flex-wrap:nowrap; align-items:center; gap:12px; padding:0 16px; background:var(--ed-panel); border-bottom:1px solid var(--ed-hair); }
+.ed-tl, .ed-tr{ flex:1 1 0; min-width:0; display:flex; align-items:center; gap:12px; }
+.ed-tr{ justify-content:flex-end; gap:4px; }
+.ed-done{ flex:none; height:36px; padding:0 14px 0 10px; display:inline-flex; align-items:center; gap:6px; border:0; border-radius:var(--ed-r-btn); background:var(--accent); color:var(--accent-on, #fff); font:600 14px var(--ed-font); cursor:pointer; white-space:nowrap; }
+.ed-done:hover{ background:var(--accent-hover); }
+.ed-done .ico{ width:18px; height:18px; stroke-width:2; }
+.ed-yr{ flex:none; height:24px; padding:0 8px; border-radius:999px; background:var(--accent-soft); color:var(--accent-ink); font-size:13px; font-weight:600; line-height:24px; }
+.ed-name{ min-width:0; font-size:15px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ed-ib, .ed-tx{ flex:none; border:0; border-radius:var(--ed-r-btn); background:transparent; color:var(--ed-ink); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; font:500 14px var(--ed-font); }
+.ed-ib{ width:36px; height:36px; padding:0; }
+.ed-tx{ height:36px; gap:6px; padding:0 12px; background:var(--ed-pill); white-space:nowrap; }
+.ed-ib:hover:not(:disabled), .ed-tx:hover{ background:var(--ed-hover); }
+.ed-ib:disabled{ opacity:.35; cursor:default; }
+.ed-ib.pv{ background:var(--ed-pill); }
+.ed-ib.pv:hover{ background:var(--ed-hover); }
+.editor:not(.no-notes) .ed-top [data-e=notes]{ background:var(--accent-soft); color:var(--accent-ink); }
+.ed-div{ flex:none; width:1px; height:20px; margin:0 6px; background:var(--ed-hair-2); }
+.ed-top .ed-live{ flex:none; }
+.ed-done:focus-visible, .ed-ib:focus-visible, .ed-tx:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+/* tabs: one pill, and the context tab in its own pill */
+.ed-tabs{ flex:none; align-self:center; display:flex; align-items:center; gap:6px; margin:0; }
+.ed-tabs .rb-tabs{ display:flex; align-items:center; gap:6px; height:auto; padding:0; border:0; }
+.ed-tabs .rb-tab, .ed-tabs .rb-ctx{ margin:0; }
+.ed-tabs .rb-tab{ position:relative; height:32px; padding:0 12px; border:0; border-radius:var(--ed-r-tab); display:flex; align-items:center; background:transparent; color:var(--ed-text-3); font:500 14px var(--ed-font); white-space:nowrap; }
+.ed-tabs .rb-tab:hover{ color:var(--ed-ink); background:var(--ed-hover); }
+.ed-tabs .rb-tab.on, .ed-tabs .rb-tab.x.on{ background:var(--accent-soft); color:var(--accent-ink); font-weight:600; border:0; }
+.ed-tabs .rb-tab:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; }
+/* the fixed tabs share one pill (.rb-fixed); the context tab has its own (.rb-ctx) */
+.ed-tabs .rb-fixed{ display:inline-flex; align-items:center; gap:2px; padding:4px; border-radius:var(--ed-r-pill); background:var(--ed-pill); }
+.ed-tabs .rb-ctx{ display:inline-flex; align-items:center; gap:2px; margin:0; padding:4px; border:0; border-radius:var(--ed-r-pill); background:var(--ed-pill); }
+.ed-tabs .rb-ctxl{ align-self:center; padding:0 8px 0 10px; margin:0; font-size:13px; font-weight:600; letter-spacing:0; text-transform:none; color:var(--ed-text-2); white-space:nowrap; }
+
+/* ---------- menus and popovers while the editor is open (spec §4, §10): panel colour, radius 16, 36px items ---------- */
+.menu kbd{ font:inherit; margin-left:auto; padding-left:24px; color:var(--text-3); }
+.menu button > span{ min-width:0; }
+body:has(.editor) .menu{ background:var(--ed-panel); border:1px solid var(--ed-hair); border-radius:16px; box-shadow:0 12px 32px rgba(27,27,25,.14), 0 2px 6px rgba(27,27,25,.06); padding:6px; min-width:220px; color:var(--ed-ink); font-family:var(--ed-font); }
+body:has(.editor) .menu button{ min-height:36px; padding:0 12px; border-radius:10px; font:500 14px var(--ed-font); color:var(--ed-ink); }
+body:has(.editor) .menu button:hover:not(:disabled){ background:var(--ed-hover); }
+body:has(.editor) .menu button.danger{ color:var(--ed-danger); }
+body:has(.editor) .menu hr{ border-top-color:var(--ed-hair-2); margin:6px 4px; }
+body:has(.editor) .menu kbd{ color:var(--ed-text-2); font-size:13px; }
+body:has(.editor) .menu .menu-h{ padding:4px 12px 6px; font:600 13px var(--ed-font); color:var(--ed-text-2); }
+body:has(.editor) .menu.ed-shapes{ min-width:0; padding:8px; }
+body:has(.editor) .ed-shapes-g button{ min-height:44px; padding:0; }
+body:has(.editor) .menu.ed-tpick{ min-width:0; padding:12px; }
+body:has(.editor) .ed-tpick-g{ padding:1px; } /* room for the outer outline so the last column isn't clipped */
+body:has(.editor) .ed-tpick-g button{ background:var(--ed-panel); border-color:var(--ed-hair-2); box-sizing:border-box; width:22px; min-width:0; height:22px; min-height:0; padding:0; border-radius:4px; }
+body:has(.editor) .ed-tpick-g button.on, body:has(.editor) .ed-tpick-g button.on:hover:not(:disabled){ background:var(--accent-soft); border-color:var(--accent); } /* the cell under the pointer keeps the picked look (the menu's hover grey was overriding it, so the last cell lost its outline) */
+
+/* More colours popover */
+.menu.ed-cpop2{ width:316px; min-width:0; padding:10px 12px 12px; overflow-y:auto; }
+.ed-cp-h{ display:flex; align-items:center; gap:6px; margin:0 0 8px; font-size:14px; }
+.ed-cp-h b{ font-weight:600; }
+.ed-cp-h span{ flex:1; color:var(--ed-text-2); font-size:13px; }
+.ed-cp-h b:only-child{ flex:1; }
+.ed-cp-h button{ width:28px; height:28px; min-height:0 !important; padding:0 !important; justify-content:center; margin-left:auto; }
+.ed-cp-h .ico{ width:16px; height:16px; }
+.ed-cp-l{ margin:10px 2px 6px; font:600 13px var(--ed-font); color:var(--ed-text-2); }
+.ed-cp-top{ display:flex; flex-wrap:wrap; gap:6px; }
+.menu .ed-cp-wide{ width:auto; flex:1 1 auto; min-height:34px; padding:0 10px; gap:8px; background:var(--ed-pill); }
+.ed-cp-wide.on, .ed-cp-g button.on{ box-shadow:0 0 0 2px var(--accent); }
+.ed-cp-sw{ flex:none; width:18px; height:18px; border-radius:50%; background:var(--c, #fff); box-shadow:inset 0 0 0 1px rgba(0,0,0,.2); }
+.ed-cp-sw.none, .rb-dot.none{ background:#fff linear-gradient(135deg, transparent 44%, var(--ed-danger) 44%, var(--ed-danger) 56%, transparent 56%); }
+.ed-cp-sw.deck, .rb-dot.deck{ background:#fff linear-gradient(135deg, #e6e6ea 25%, transparent 25%, transparent 50%, #e6e6ea 50%, #e6e6ea 75%, transparent 75%) 0 0/8px 8px; }
+.ed-cp-g{ display:grid; grid-template-columns:repeat(10, 24px); gap:4px; }
+.menu .ed-cp-g button, .menu .ed-cp-y button, .menu .ed-cp-t button{ width:24px; height:24px; min-height:0; padding:0; border-radius:50%; background:var(--c) !important; box-shadow:inset 0 0 0 1px rgba(0,0,0,.18); }
+body:has(.editor) .menu .ed-cp-g button, body:has(.editor) .menu .ed-cp-y button, body:has(.editor) .menu .ed-cp-t button{ min-height:0; padding:0; }
+.ed-cp-t{ display:grid; grid-template-columns:18px repeat(3, 24px); gap:6px 10px; align-items:center; justify-content:start; }
+.ed-cp-t span{ font:600 12px var(--ed-font); color:var(--ed-text-2); text-align:center; }
+.menu .ed-cp-g button.on, .menu .ed-cp-y button.on, .menu .ed-cp-t button.on{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.18), 0 0 0 2px var(--ed-panel), 0 0 0 4px var(--accent); }
+.menu .ed-cp-g button.ed-cp-add{ background:transparent !important; box-shadow:inset 0 0 0 1px var(--ed-hair-2); justify-content:center; color:var(--ed-text-2); }
+.ed-cp-add .ico{ width:14px; height:14px; }
+.ed-cp-y{ display:grid; grid-template-columns:repeat(5, 1fr); gap:4px 8px; justify-items:center; }
+.ed-cp-y span{ font:600 12px var(--ed-font); color:var(--ed-text-2); }
+.menu .ed-cp-y button{ width:24px; height:24px; }
+.menu.ed-cpop2 .ed-cpop-w button{ min-height:30px; border:1px solid var(--ed-hair-2); }
+.menu.ed-cpop2 .ed-cpop-w button.on{ border-color:var(--accent); background:var(--accent-soft); color:var(--accent-ink); }
+.ed-cp-sv{ --hue:0; position:relative; height:120px; border-radius:10px; cursor:crosshair; touch-action:none; background:linear-gradient(to top, #000, transparent), linear-gradient(to right, #fff, hsl(var(--hue), 100%, 50%)); }
+.ed-cp-sv i{ position:absolute; width:14px; height:14px; margin:-7px 0 0 -7px; border-radius:50%; border:2px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.4); pointer-events:none; }
+.ed-cp-hue{ -webkit-appearance:none; appearance:none; width:100%; height:12px; margin:10px 0 8px; border-radius:6px; background:linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00); }
+.ed-cp-hue::-webkit-slider-thumb{ -webkit-appearance:none; width:16px; height:16px; border-radius:50%; background:#fff; border:2px solid var(--ed-ink); cursor:pointer; }
+.ed-cp-val{ display:flex; align-items:center; gap:6px; }
+.ed-cp-val select, .ed-cp-in{ height:34px; border:1px solid var(--ed-hair-2); border-radius:10px; background:var(--ed-panel); color:var(--ed-ink); font:500 14px var(--ed-font); padding:0 8px; }
+.ed-cp-in{ flex:1; min-width:0; }
+.ed-cp-prev{ width:26px; height:26px; }
+.menu .ed-cp-use{ width:auto; min-height:34px; padding:0 14px; background:var(--accent); color:var(--accent-on, #fff) !important; }
+.menu .ed-cp-use:hover:not(:disabled){ background:var(--accent-hover) !important; }
+
+/* quick colour dots in a pill */
+.rb-dot.sm{ width:18px; height:18px; margin:0 4px; } /* small dots with room round them, so the selected ring doesn't touch its neighbours */
+.rb-dot.none, .rb-dot.deck{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.25); }
+.rb-dot.match{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.2); outline:1.5px dashed var(--ed-text-2); outline-offset:1px; }
+.rb-dot.match.on{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.2), 0 0 0 2px #fff, 0 0 0 4px var(--accent); outline:none; }
+.rb-tcol{ border-bottom-color:var(--ed-ink); }
+
+/* Reveal tab dot (a selected object has a reveal setting) */
+.ed-tabs .rb-rdot{ position:absolute; top:6px; right:4px; width:7px; height:7px; border-radius:50%; background:var(--accent); }
+
+/* ---------- slide strip header (spec §4) ---------- */
+.ed-shead{ background:var(--ed-panel); border-bottom:1px solid var(--ed-hair); gap:6px; }
+.ed-sb{ position:relative; flex:none; height:36px; min-width:40px; padding:0 8px; display:inline-flex; align-items:center; justify-content:center; gap:4px; border:0; border-radius:var(--ed-r-btn); background:var(--ed-pill); color:var(--ed-ink); cursor:pointer; }
+.ed-sb:hover{ background:var(--ed-hover); }
+.ed-sb .ico{ width:20px; height:20px; }
+.ed-sbin{ margin-left:auto; }
+.ed-sbin.on{ background:var(--accent-soft); color:var(--accent-ink); }
+.ed-sbin .rb-badge{ top:-4px; right:-4px; }
+.ed-spick{ order:3; border-radius:999px; background:var(--accent-soft); color:var(--accent-ink); padding:2px 4px 2px 12px; }
+.ed-spick button:hover{ background:color-mix(in srgb, var(--accent) 18%, transparent); }
+
+/* ---------- Reveal tab ---------- */
+.rb-spacer{ flex:1 1 auto; min-width:8px; }
+.rb-vdiv{ flex:none; align-self:stretch; width:1px; margin:18px 4px 0; background:var(--ed-hair-2); }
+.rb-step{ min-width:56px; text-align:center; color:var(--ed-ink); }
+.rb-seg .rb-gb{ gap:2px; padding:0 4px; }
+
+/* Sentence Builder tab: the builder's name sits on one line inside its pill (the question is in its tooltip) so every pill is the same height */
+.sbr-name{ display:inline-flex; align-items:center; min-width:0; max-width:230px; padding:0 8px 0 4px; }
+.sbr-name .sbr-t{ font:600 14px var(--ed-font); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:var(--ed-ink); }
+
+/* ---------- tooltips ---------- */
+.sv-tip{ position:fixed; z-index:400; max-width:300px; padding:7px 11px; border-radius:8px; background:var(--ed-ink); color:#fff; font:500 13px/1.35 var(--ed-font); pointer-events:none; box-shadow:0 4px 14px rgba(27,27,25,.25); display:flex; flex-direction:column; gap:1px; }
+.sv-tip b{ font-weight:600; }
+.sv-tip span{ color:#B9B7AE; font-weight:400; }
+
+/* ---------- §1 ribbon: full-width bar, group labels above pills ---------- */
+.ribbon{ background:var(--ed-panel); border-bottom:1px solid var(--ed-hair); }
+.rb-panel{ align-items:flex-start; gap:6px; padding:8px 16px 10px; min-height:0; overflow-x:auto; }
+@media (max-height:760px){ .rb-panel{ min-height:0; } }
+.rb-g{ padding:0; border-right:0; gap:4px; min-width:0; }
+.rb-gl{ padding:0 4px; text-align:center; /* spans the whole group, so it sits over the middle of its pill; a pill narrower than its name centres its buttons */ font:400 13px/16px var(--ed-font); color:var(--ed-text-2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.rb-gb{ flex:none; align-items:center; justify-content:center; gap:2px; min-height:40px; padding:3px; border-radius:var(--ed-r-pill); background:var(--ed-pill); } /* buttons are 34px inside a 40px pill: the pressed / hover fill has an even margin all round */
+.rb-gb:has(> .rb-col, > .rb-rows){ padding:4px; }
+.rb-col{ gap:2px; }
+.rb-col + .rb-col{ margin-left:2px; padding-left:4px; border-left:1px solid var(--ed-hair-2); }
+.rb-note{ color:var(--ed-text-2); }
+
+/* buttons: 40 × 40 icon-only, radius 10; labelled buttons keep their words (inside the pill, 14px) */
+.rb-b{ border:0; border-radius:var(--ed-r-btn); color:var(--ed-ink); font:500 14px var(--ed-font); }
+.rb-b .ico{ width:20px; height:20px; color:var(--ed-ink); }
+.rb-b:hover:not(:disabled){ background:var(--ed-hover); }
+.rb-b.on, .rb-b.on .ico{ background:var(--accent-soft); color:var(--accent-ink); border:0; }
+.rb-b.on .ico{ background:none; }
+.rb-b:disabled{ opacity:.35; }
+.rb-b.danger, .rb-b.danger .ico{ color:var(--ed-danger); }
+.rb-b.primary{ background:var(--accent); color:var(--accent-on, #fff); }
+.rb-b.primary .ico{ color:var(--accent-on, #fff); }
+.rb-badge{ color:var(--accent-on, #fff); }
+.rb-dot.on, .ed-cdot.on{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.2), 0 0 0 2px var(--ed-panel), 0 0 0 4px var(--accent); }
+.rb-dot.match.on{ box-shadow:inset 0 0 0 1px rgba(0,0,0,.2), 0 0 0 2px var(--ed-panel), 0 0 0 4px var(--accent); }
+.rb-b.primary:hover:not(:disabled){ background:var(--accent-hover); }
+.rb-gb > .rb-b{ height:34px; padding:0 12px; }
+.rb-gb > .rb-b.ic{ width:34px; padding:0; }
+.rb-gb > .rb-b.big{ flex-direction:row; height:34px; min-width:0; padding:0 12px; gap:8px; justify-content:center; }
+.rb-b.big .ico{ width:20px; height:20px; }
+.rb-b.big span{ font-size:14px; max-width:none; white-space:nowrap; text-align:left; }
+.rb-sep{ flex:none; width:1px; height:20px; margin:0 4px; background:var(--ed-hair-2); }
+.rb-gb > .rb-b.ic:has(> .rb-dd){ width:auto; min-width:34px; padding:0 9px; gap:3px; }
+.rb-gb > .rb-b.ic.tb{ font-size:16px; }
+/* the ▾ is drawn as a shape, not a text character: a character has side bearings, which made the padding on its side look uneven */
+.rb-dd{ display:block; flex:none; width:8px; height:5px; margin:0; font-size:0; background:var(--ed-text-2); clip-path:polygon(0 0, 100% 0, 50% 100%); }
+/* A Lucide icon has about 1.7px of empty space inside its own box, so an icon followed by something needs that much less padding on its left to look even. */
+.rb-gb > .rb-b:not(.ic):has(> .ico:first-child){ padding-left:10px; }
+.rb-gb > .rb-b.ic:has(> .ico:first-child):has(> .rb-dd){ padding:0 9px 0 7.5px; }
+.ed-sb:has(> .rb-dd){ padding:0 8px 0 6.5px; }
+.rb-panel.compact .rb-gb > .rb-b.big{ padding:0 10px; }
+.rb-panel.compact .rb-b.big:has(> .ico) > span:not(.rb-sw){ display:none; } /* text-only buttons (the FR language button) keep their words */
+.rb-col .rb-b.ic{ width:36px; height:32px; }
+.rb-col .rb-b.ic .ico{ width:18px; height:18px; }
+.rb-col .rb-b{ height:32px; }
+.rb-badge{ background:var(--accent); }
+.rb-font{ height:32px; border:0; border-radius:var(--ed-r-btn); background-color:var(--ed-panel); color:var(--ed-ink); font:500 14px var(--ed-font); }
+.rb-fs{ font-size:14px; }
+.rb-b:focus-visible, .rb-font:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; }
+.rb-sw, .rb-dot{ flex:none; }
+
+/* ---------- laptop sizing: a more compact editor on screens up to 1600px wide or 900px high ---------- */
+@media (max-width:1600px), (max-height:900px){
+  .ed-top{ height:46px; padding:0 12px; gap:10px; }
+  .ed-tl, .ed-tr{ gap:10px; }
+  .ed-tr{ gap:2px; }
+  .ed-done{ height:30px; padding:0 12px 0 8px; font-size:13px; border-radius:9px; }
+  .ed-done .ico{ width:16px; height:16px; }
+  .ed-yr{ height:20px; line-height:20px; font-size:12px; padding:0 7px; }
+  .ed-name{ font-size:13.5px; }
+  .ed-ib{ width:32px; height:32px; border-radius:9px; }
+  .ed-ib .ico, .ed-tx .ico{ width:18px; height:18px; }
+  .ed-tx{ height:32px; font-size:13px; }
+  .ed-div{ height:18px; margin:0 4px; }
+  .ed-tabs .rb-fixed, .ed-tabs .rb-ctx{ padding:3px; border-radius:11px; }
+  .ed-tabs .rb-tab{ height:28px; padding:0 10px; font-size:13px; border-radius:8px; }
+  .ed-tabs .rb-ctxl{ font-size:12px; padding:0 6px 0 8px; }
+  .ed-tabs .rb-rdot{ top:5px; right:3px; width:6px; height:6px; }
+
+  .rb-panel{ padding:5px 12px 7px; gap:5px; }
+  .rb-g{ gap:3px; }
+  .rb-gl{ font-size:12px; line-height:14px; padding:0 3px; }
+  .rb-gb{ min-height:36px; border-radius:10px; padding:3px; gap:1px; }
+  .rb-gb:has(> .rb-col, > .rb-rows){ padding:3px; }
+  .rb-gb > .rb-b{ height:30px; padding:0 10px; font-size:13px; border-radius:8px; }
+  .rb-gb > .rb-b.ic{ width:30px; padding:0; }
+  .rb-gb > .rb-b.ic:has(> .rb-dd){ width:auto; min-width:30px; padding:0 7px; }
+  .rb-gb > .rb-b:not(.ic):has(> .ico:first-child){ padding-left:8px; }
+  .rb-gb > .rb-b.ic:has(> .ico:first-child):has(> .rb-dd){ padding:0 7px 0 5.5px; }
+  .rb-gb > .rb-b.big{ height:30px; }
+  .rb-b .ico, .rb-b.big .ico{ width:18px; height:18px; }
+  .rb-col .rb-b, .rb-col .rb-b.ic{ height:28px; }
+  .rb-col .rb-b.ic{ width:32px; }
+  .rb-font{ height:28px; font-size:13px; }
+  .rb-fs{ font-size:13px; }
+  .rb-dot.sm{ width:16px; height:16px; margin:0 3.5px; }
+  .rb-sep{ height:18px; margin:0 3px; }
+  .rb-vdiv{ margin-top:16px; }
+
+  .ed-main{ grid-template-columns:164px 1fr; }
+  .ed-main:has(> .gal){ grid-template-columns:164px 1fr 270px; }
+  .ed-thumbs{ padding:8px; gap:8px; }
+  .ed-shead{ padding:8px 8px 6px; margin:0 -8px; }
+  .ed-sb{ height:30px; min-width:34px; }
+  .ed-stage .stage-host{ inset:8px; }
+  .ed-status{ padding:3px 12px; }
+  .ed-nbar{ height:24px; }
+
+  body:has(.editor) .menu button{ min-height:32px; font-size:13px; }
+}
+
+/* v1.91 Design → Themes menu: each row shows the year's dark / middle / light as three chips. */
+.menu .th-opt{ display:flex; align-items:center; gap:12px; width:100%; }
+.menu .th-opt .th-sw{ display:inline-flex; flex:none; border-radius:6px; overflow:hidden; box-shadow:inset 0 0 0 1px rgba(0,0,0,.18); }
+.menu .th-opt .th-sw i{ width:18px; height:22px; display:block; }
+.menu .th-opt .th-n{ display:flex; flex-direction:column; align-items:flex-start; line-height:1.2; text-align:left; }
+.menu .th-opt .th-n small{ font:400 12px var(--ed-font, inherit); color:var(--ed-text-2, #666); }
+.menu .th-opt.on{ background:var(--ed-hover, rgba(0,0,0,.06)); }
+.menu .th-opt svg{ margin-left:auto; width:16px; height:16px; flex:none; }

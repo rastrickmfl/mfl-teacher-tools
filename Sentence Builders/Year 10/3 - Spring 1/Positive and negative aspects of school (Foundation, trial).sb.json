@@ -1,0 +1,986 @@
+{
+  "v": 1,
+  "lang": "fr",
+  "year": 10,
+  "term": "3 - Spring 1",
+  "title": "Positive and negative aspects of school (Foundation, trial)",
+  "q": {
+    "tl": "Quels sont les aspects positifs et négatifs de ton collège ?",
+    "en": "What are the positive and negative aspects of your school?"
+  },
+  "paper": "auto",
+  "size": "auto",
+  "cols": [
+    {
+      "id": "med8yu7c",
+      "title": "Opinion phrase",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "J’aime mon collège puisque",
+            "en": "I like my school since",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "zhem",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 10,
+                "p": "mohn",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 18,
+                "p": "koh-LEZH",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 26,
+                "p": "pwee-SKUH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je trouve mon collège bon car",
+            "en": "I find my school good because",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 9,
+                "p": "TROOV",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 13,
+                "p": "mohn",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 21,
+                "p": "koh-LEZH",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 25,
+                "p": "BOHN",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 29,
+                "p": "kar",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Le collège me plaît parce que",
+            "en": "School pleases me because",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "luh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "koh-LEZH",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 13,
+                "p": "muh",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 19,
+                "p": "PLAY",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 29,
+                "p": "kuh",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "4o1kmtj7",
+      "title": "Positive",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "il y a de bonne discipline,",
+            "en": "there is good behaviour,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 9,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 15,
+                "p": "BUN",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 26,
+                "p": "dee-see-PLEEN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a des visites scolaires,",
+            "en": "there are school trips,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 10,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 18,
+                "p": "vee-ZEET",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 28,
+                "p": "skoh-LAIR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’aime mon emploi du temps,",
+            "en": "I like my timetable,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "zhem",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 17,
+                "p": "mohn-NAHN-plwah",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 20,
+                "p": "dew",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 26,
+                "p": "TAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’étudie beaucoup de cours,",
+            "en": "I study a lot of lessons,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "zhay-tyoo-DEE",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 17,
+                "p": "boh-KOO",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 20,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 26,
+                "p": "KOOR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’obtiens de bonnes notes,",
+            "en": "I get good grades,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "zhohb-TYAN",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 12,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 19,
+                "p": "BUN",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "NOHT",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’obtiens un bon bulletin scolaire,",
+            "en": "I get a good school report,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "zhohb-TYAN",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 12,
+                "p": "uhn",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 16,
+                "p": "BOHN",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 25,
+                "p": "bool-TAN",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 34,
+                "p": "skoh-LAIR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je m’entends bien avec ma classe,",
+            "en": "I get on well with my classmates,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 12,
+                "p": "mahn-TAHN",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 17,
+                "p": "BYAN",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 22,
+                "p": "ah-VEK",
+                "on": false
+              },
+              {
+                "s": 23,
+                "e": 25,
+                "p": "mah",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 32,
+                "p": "KLAHS",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je peux améliorer mes compétences,",
+            "en": "I can improve my skills,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 7,
+                "p": "PUH",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 17,
+                "p": "ah-may-lee-oh-RAY",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 21,
+                "p": "may",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 33,
+                "p": "kohm-pay-TAHNS",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je réussis mes examens,",
+            "en": "I pass my exams,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "ray-oo-SEE",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 14,
+                "p": "may",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 22,
+                "p": "ehg-zah-MAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "les terrains de sport sont excellents,",
+            "en": "the sport pitches are excellent,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "lay",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 12,
+                "p": "tair-AN",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 15,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 21,
+                "p": "SPOR",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 37,
+                "p": "sohn-tek-say-LAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "mon prof m’inspire,",
+            "en": "my teacher inspires me,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "mohn",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 8,
+                "p": "PROF",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 18,
+                "p": "man-SPEER",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "re4ak8f7",
+      "title": "Connective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "cependant",
+            "en": "however",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "suh-pahn-DAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "de l’autre côté",
+            "en": "on the other hand",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "loh-TRUH",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 15,
+                "p": "koh-TAY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "par contre",
+            "en": "on the other hand",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "par",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 10,
+                "p": "kohntr",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pourtant",
+            "en": "yet",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "poor-TAHN",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "3684ifja",
+      "title": "Negative",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "il est interdit de mâcher du chewing-gum.",
+            "en": "it is forbidden to chew chewing-gum.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 15,
+                "p": "eh-tan-tair-DEE",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 18,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 25,
+                "p": "mah-SHAY",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 28,
+                "p": "dew",
+                "on": false
+              },
+              {
+                "s": 29,
+                "e": 40,
+                "p": "CHOO-ing-GUM",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il ne faut pas mettre du maquillage.",
+            "en": "you must not put on makeup.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 5,
+                "p": "nuh",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 10,
+                "p": "FOH",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 14,
+                "p": "pah",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 21,
+                "p": "METR",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 24,
+                "p": "dew",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 35,
+                "p": "mah-kee-YAHZH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a du harcèlement.",
+            "en": "there is some bullying.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 9,
+                "p": "dew",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 21,
+                "p": "ahr-sel-MAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’ai de mauvaises notes.",
+            "en": "I have bad grades.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "zhay",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 17,
+                "p": "moh-VEZ",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 23,
+                "p": "NOHT",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je ne comprends pas mes profs.",
+            "en": "I don’t understand my teachers.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 5,
+                "p": "nuh",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 15,
+                "p": "kohm-PRAHN",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 19,
+                "p": "pah",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 23,
+                "p": "may",
+                "on": false
+              },
+              {
+                "s": 24,
+                "e": 29,
+                "p": "PROF",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je passe beaucoup d’examens.",
+            "en": "I sit lots of exams.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 8,
+                "p": "PAHS",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 17,
+                "p": "boh-KOO",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 27,
+                "p": "dehg-zah-MAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "j’ai trop de devoirs.",
+            "en": "I have too much homework.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "zhay",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 9,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 12,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 20,
+                "p": "duhv-WAHR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "les bâtiments sont vieux.",
+            "en": "the buildings are old.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "lay",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 13,
+                "p": "bah-tee-MAHN",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 18,
+                "p": "sohn",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 24,
+                "p": "VYUH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "mes profs sont stricts.",
+            "en": "my teachers are strict.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "may",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 9,
+                "p": "PROF",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 14,
+                "p": "sohn",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 22,
+                "p": "STREEKT",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "updated": 1792250275295
+}

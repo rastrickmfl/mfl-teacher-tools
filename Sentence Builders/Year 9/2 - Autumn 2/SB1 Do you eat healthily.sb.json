@@ -1,0 +1,1589 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 9,
+ "term": "2 - Autumn 2",
+ "title": "SB1 Do you eat healthily",
+ "q": {
+  "tl": "Manges-tu sainement ?",
+  "en": "Do you eat healthily?"
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "cwdffrle",
+   "title": "Time phrase",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Comme goûter,",
+      "en": "As a snack,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 11,
+        "e": 12,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "kom",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 12,
+        "p": "goo-TAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Pour mon petit-déjeuner,",
+      "en": "For my breakfast,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 22,
+        "e": 23,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "mohn",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 23,
+        "p": "puh-tee-day-zhuh-NAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Pour mon déjeuner,",
+      "en": "For my lunch,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 17,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "mohn",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 17,
+        "p": "day-zhuh-NAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Pour mon dîner,",
+      "en": "For my dinner,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "mohn",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 14,
+        "p": "dee-NAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Quand j’ai faim,",
+      "en": "When I am hungry,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "kahn",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "FAN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Quand j’ai soif,",
+      "en": "When I am thirsty,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "kahn",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "SWAF",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "stumvdhh",
+   "title": "Verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "je mange",
+      "en": "I eat",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "MAHNZH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’adore manger",
+      "en": "I love to eat",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zha-DOR",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 14,
+        "p": "mahn-ZHAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je déteste manger",
+      "en": "I hate to eat",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 17,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "day-TEST",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 17,
+        "p": "mahn-ZHAY",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "je bois",
+      "en": "I drink",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "BWAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’adore boire",
+      "en": "I love to drink",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zha-DOR",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 13,
+        "p": "BWAHR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je hais boire",
+      "en": "I hate to drink",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 13,
+        "p": "BWAHR",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "pv5qy20e",
+   "title": "Partitive article + Noun (food/drink)",
+   "sub": 2,
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "du fast-food",
+      "en": "some fast-food",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "fast-FOOD",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du fromage",
+      "en": "some cheese",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "froh-MAHZH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du fruit",
+      "en": "some fruit",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 7,
+        "e": 8,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "FRWEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du pain",
+      "en": "some bread",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "PAN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du poisson",
+      "en": "some fish",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "pwah-SOHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du poulet",
+      "en": "some chicken",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "poo-LAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de la confiture",
+      "en": "some jam",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 15,
+        "p": "kohn-fee-TEWR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de la glace",
+      "en": "some ice cream",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 11,
+        "p": "GLASS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de la salade",
+      "en": "some salad",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 12,
+        "p": "sa-LAD",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de la viande",
+      "en": "some meat",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 12,
+        "p": "VYAHND",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des bonbons",
+      "en": "some sweets",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "bohn-BOHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des chips",
+      "en": "some crisps",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "SHEEPS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des frites",
+      "en": "some chips",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 10,
+        "p": "FREET",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des gâteaux",
+      "en": "some cakes",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "ga-TOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des légumes",
+      "en": "some vegetables",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "lay-GEWM",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des pommes de terre",
+      "en": "some potatoes",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 10,
+        "p": "pom",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 19,
+        "p": "TAIR",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "du coca",
+      "en": "some Coca-Cola",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "koh-KAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du jus d’orange",
+      "en": "some orange juice",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 6,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "zhew",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 15,
+        "p": "doh-RAHNZH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du lait",
+      "en": "some milk",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "LAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "du thé",
+      "en": "some tea",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "TAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de l’eau",
+      "en": "some water",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "LOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "des boissons gazeuses",
+      "en": "some fizzy drinks",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 11,
+        "e": 12,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 20,
+        "e": 21,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 12,
+        "p": "bwah-SOHN",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 21,
+        "p": "ga-ZUHZ",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "gff48jdw",
+   "title": "Reason why",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "parce que c’est bon pour la santé.",
+      "en": "because it’s good for your health.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 19,
+        "p": "bohn",
+        "on": false
+       },
+       {
+        "s": 20,
+        "e": 24,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 25,
+        "e": 27,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 28,
+        "e": 33,
+        "p": "sahn-TAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est mauvais pour la santé.",
+      "en": "because it’s bad for your health.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 22,
+        "e": 23,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 23,
+        "p": "moh-VAY",
+        "on": false
+       },
+       {
+        "s": 24,
+        "e": 28,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 29,
+        "e": 31,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 32,
+        "e": 37,
+        "p": "sahn-TAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est délicieux.",
+      "en": "because it’s delicious.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 24,
+        "e": 25,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 25,
+        "p": "day-lee-SYUH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est équilibré.",
+      "en": "because it’s balanced.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 25,
+        "p": "say-tay-kee-lee-BRAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est frais.",
+      "en": "because it’s fresh.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 20,
+        "e": 21,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 21,
+        "p": "FRAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est savoureux.",
+      "en": "because it’s tasty.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 24,
+        "e": 25,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 25,
+        "p": "sa-voo-RUH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est dégoûtant.",
+      "en": "because it’s disgusting.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 24,
+        "e": 25,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 25,
+        "p": "day-goo-TAHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est sucré.",
+      "en": "because it’s sweet.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 21,
+        "p": "sew-KRAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est salé.",
+      "en": "because it’s salty.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 20,
+        "p": "sa-LAY",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  }
+ ],
+ "updated": 1792516628023,
+ "tier": ""
+}

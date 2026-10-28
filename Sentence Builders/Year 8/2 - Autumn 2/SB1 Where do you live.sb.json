@@ -1,0 +1,1064 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 8,
+ "term": "2 - Autumn 2",
+ "title": "SB1 Where do you live",
+ "q": {
+  "tl": "Où habites-tu ?",
+  "en": "Where do you live?"
+ },
+ "paper": "A4",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "6rht5ml4",
+   "title": "Verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "J’habite dans",
+      "en": "I live in",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 2,
+        "e": 3,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "zhah-BEET",
+        "on": true
+       },
+       {
+        "s": 9,
+        "e": 13,
+        "p": "dahn",
+        "on": true
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "n9e5raxf",
+   "title": "Place",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "une région qui est",
+      "en": "a region which is",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 18,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 10,
+        "p": "ray-ZHYOHN",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "kee",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 18,
+        "p": "eh",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "une ville qui est",
+      "en": "a town which is",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 15,
+        "e": 17,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "VEEL",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "kee",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 17,
+        "p": "eh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "ke34rbnh",
+   "title": "Adjective",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "belle.",
+      "en": "beautiful.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "BEL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "calme.",
+      "en": "calm/quiet.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "KALM",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dangereuse.",
+      "en": "dangerous.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 10,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "dahn-zhuh-RUHZ",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "énorme.",
+      "en": "enormous.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "ay-NORM",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "grande.",
+      "en": "big.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "GRAHND",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "historique.",
+      "en": "historic.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 1,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "ees-toh-REEK",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "industrielle.",
+      "en": "industrial.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 12,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 12,
+        "p": "an-dus-tree-EL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "jolie.",
+      "en": "pretty.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "zhoh-LEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "petite.",
+      "en": "small.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "puh-TEET",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "propre.",
+      "en": "clean.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "PROH-pruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "sale.",
+      "en": "dirty.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "SAHL",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "glsopy2s",
+   "title": "Verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Dans ma ville, il y a",
+      "en": "In my town there is",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dahn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "mah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 13,
+        "p": "VEEL",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 17,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 19,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 20,
+        "e": 21,
+        "p": "ah",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "Dans ma ville, il n’y a pas de",
+      "en": "In my town there isn’t",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 26,
+        "e": 27,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dahn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "mah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 13,
+        "p": "VEEL",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 17,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 21,
+        "p": "nee",
+        "on": false
+       },
+       {
+        "s": 22,
+        "e": 23,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 24,
+        "e": 27,
+        "p": "pah",
+        "on": false
+       },
+       {
+        "s": 28,
+        "e": 30,
+        "p": "duh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "v7ftqrmw",
+   "title": "Noun",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "un bâtiment.",
+      "en": "a building.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "bah-tee-MAHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un café.",
+      "en": "a café.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "kah-FAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un centre commercial.",
+      "en": "a shopping centre.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "SAHN-truh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 20,
+        "p": "koh-mair-SYAHL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un cinéma.",
+      "en": "a cinema.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "see-nay-MAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un château.",
+      "en": "a castle.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "shah-TOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un hôpital.",
+      "en": "a hospital.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       },
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "uhn-oh-pee-TAHL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un musée.",
+      "en": "a museum.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "mew-ZAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un restaurant.",
+      "en": "a restaurant.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       },
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 13,
+        "p": "res-toh-RAHN",
+        "on": true
+       }
+      ]
+     },
+     {
+      "tl": "un (super)marché.",
+      "en": "a (super)market.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 16,
+        "p": "mar-SHAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un stade.",
+      "en": "a stadium.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 2,
+        "c": "b"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "STAD",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "qmmcthhw",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "une banque",
+      "en": "a bank",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 10,
+        "p": "BONK",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une bibliothèque",
+      "en": "a library",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 11,
+        "e": 12,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 16,
+        "p": "bee-blee-oh-TEK",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une boulangerie",
+      "en": "a bakery",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 15,
+        "p": "boo-lahn-zhuh-REE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une église",
+      "en": "a church",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 10,
+        "p": "ay-GLEEZ",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une gare",
+      "en": "a train station",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "gah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une mosquée",
+      "en": "a mosque",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "moss-KAY",
+        "on": true
+       }
+      ]
+     },
+     {
+      "tl": "une piscine",
+      "en": "a swimming pool",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 11,
+        "p": "pee-SEEN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une poste",
+      "en": "a post office",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "poss-t",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une usine",
+      "en": "a factory",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 3,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "oo-ZEEN",
+        "on": true
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  }
+ ],
+ "updated": 1793006725114,
+ "tier": ""
+}

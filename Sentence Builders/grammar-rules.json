@@ -1,0 +1,80 @@
+{
+ "v": 1,
+ "about": "Grammar rules used when the Slideshow Viewer joins sentence builder items into a sentence (Sentence Unjumble, Translation, Hungry Translations, Gap fill). Read by sb-grammar.js. Rules run in the order listed, on each pair of neighbouring items. Set \"on\": false to switch a rule off. Edit with care: this must stay valid JSON.",
+ "fr": {
+  "apostrophe": "’",
+  "vowels": "aeiouàâäéèêëîïôöûùüœæ",
+  "silentHExceptions_note": "Words starting with h that do NOT elide or contract (h aspiré). Plurals in -s / -x match automatically.",
+  "hAspire": ["hache", "haché", "haie", "haine", "hall", "halte", "hamac", "hamburger", "hamster", "hanche", "handball", "handicap", "hangar", "harcèlement", "hareng", "haricot", "harpe", "hasard", "hâte", "hausse", "haut", "hauteur", "havre", "héros", "hérisson", "hêtre", "hibou", "hiérarchie", "hip-hop", "hippie", "hobby", "hockey", "hollandais", "hollandaise", "Hollande", "homard", "Hongrie", "hongrois", "hongroise", "honte", "hors", "hot-dog", "houx", "hublot", "huit", "huitième", "hutte"],
+  "vowelExceptions_note": "Words starting with a vowel letter that do NOT elide (le onze, le oui).",
+  "vowelExceptions": ["onze", "onzième", "oui", "ouistiti"],
+  "yVowels_note": "Words starting with y are treated as starting with a consonant (le yaourt, le yoga) except these.",
+  "yVowels": ["y", "yeux"],
+  "rules": [
+   {
+    "id": "fr-negative-de",
+    "kind": "negative-de",
+    "on": true,
+    "note": "After a negative, un / une / des / du / de la / de l' become de, or d' before a vowel or silent h. 'il n'y a pas de' + 'une piscine' → 'il n'y a pas de' + 'piscine'; + 'une église' → 'il n'y a pas' + 'd'église'; 'je n'ai pas' + 'un chien' → 'je n'ai pas' + 'de chien'. Not after être: 'ce n'est pas' + 'un problème' stays.",
+    "negators": ["pas", "jamais", "plus", "point", "guère"],
+    "articles": ["un", "une", "des", "du", "de la", "de l’", "de l'"],
+    "exceptLeft": [
+     "\\b(?:n[’']|ne\\s+)(?:suis|es|est|sommes|êtes|sont|étais|était|étions|étiez|étaient|serai|seras|sera|serons|serez|seront|serais|serait|serions|seriez|seraient|sois|soit|soyons|soyez|soient)\\s+(?:pas|jamais|plus|point|guère)$",
+     "\\b(?:n[’']|ne\\s+)(?:suis|es|est|sommes|êtes|sont|étais|était|étions|étiez|étaient)\\s+(?:pas|jamais|plus)\\s+(?:vraiment|toujours|très)$",
+     "\\b(?:n[’']|ne\\s+)(?:devenir|devient|deviennent|devenu|devenue)\\s+(?:pas|jamais|plus)$"
+    ],
+    "exceptRight": ["^(?:un|une)\\s+seule?\\b"]
+   },
+   {
+    "id": "fr-contractions",
+    "kind": "contraction",
+    "on": true,
+    "note": "à + le → au, à + les → aux, de + le → du, de + les → des. The contracted word goes with the following item: 'je vais à' + 'le cinéma' → 'je vais' + 'au cinéma'. Not before l' (à l'hôpital). Known gap: 'de' + 'le' as a pronoun ('j'ai décidé de' + 'le faire') would wrongly become 'du faire': mark such an item \"gram\": false.",
+    "pairs": [
+     { "left": "à", "right": "le", "out": "au" },
+     { "left": "à", "right": "les", "out": "aux" },
+     { "left": "de", "right": "le", "out": "du" },
+     { "left": "de", "right": "les", "out": "des" }
+    ],
+    "exceptLeft": ["\\b(?:pas|jamais|plus|point|guère)\\s+de$"]
+   },
+   {
+    "id": "fr-elision",
+    "kind": "elision",
+    "on": true,
+    "note": "A little word at the end of one item meets a vowel or silent h at the start of the next: je → j', que → qu', de → d' … The elided word goes with the following item: 'je pense que' + 'il est' → 'je pense' + 'qu'il est'. 'ce' only before être (c'est); 'si' only before il / ils.",
+    "words": {
+     "je": "j’", "me": "m’", "te": "t’", "se": "s’", "le": "l’", "la": "l’", "ne": "n’", "de": "d’", "que": "qu’", "jusque": "jusqu’",
+     "ce": { "out": "c’", "before": ["est", "était", "étaient", "étais", "en"] },
+     "si": { "out": "s’", "before": ["il", "ils"] },
+     "lorsque": { "out": "lorsqu’", "before": ["il", "ils", "elle", "elles", "on", "un", "une", "en"] },
+     "puisque": { "out": "puisqu’", "before": ["il", "ils", "elle", "elles", "on", "un", "une", "en"] },
+     "quoique": { "out": "quoiqu’", "before": ["il", "ils", "elle", "elles", "on", "un", "une", "en"] }
+    }
+   }
+  ]
+ },
+ "es": {
+  "rules": [
+   {
+    "id": "es-contractions",
+    "kind": "contraction",
+    "on": true,
+    "note": "a + el → al, de + el → del ('voy a' + 'el parque' → 'voy' + 'al parque'). Only lower-case el, so names such as El Salvador are left alone.",
+    "caseSensitive": true,
+    "pairs": [
+     { "left": "a", "right": "el", "out": "al" },
+     { "left": "de", "right": "el", "out": "del" }
+    ]
+   },
+   {
+    "id": "es-no-hay",
+    "kind": "drop-article",
+    "on": false,
+    "note": "Switched off (not chosen 2026-10-17). Turn on to drop un / una / unos / unas after 'no hay': 'no hay' + 'una piscina' → 'no hay' + 'piscina'.",
+    "left": ["\\bno\\s+hay$"],
+    "articles": ["un", "una", "unos", "unas"]
+   }
+  ]
+ }
+}

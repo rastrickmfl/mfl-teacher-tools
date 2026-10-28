@@ -1,0 +1,172 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "2 - Autumn 2",
+ "title": "I can talk about my age",
+ "q": {
+  "tl": "I can talk about my age",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "khfmumen",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Quel âge as-tu ?",
+      "en": "What age do you have?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "kel",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "ahzh",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 14,
+        "p": "ah-TOO",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "q181ni05",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "J’ai onze ans.",
+      "en": "I have 11 years",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "ohnz",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "ahn",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "J’ai douze ans.",
+      "en": "I have 12 years",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "dooz",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "ahn",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "6ifkb535",
+   "title": "And you?",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Et toi ?",
+      "en": "And you?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "twah",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458441
+}

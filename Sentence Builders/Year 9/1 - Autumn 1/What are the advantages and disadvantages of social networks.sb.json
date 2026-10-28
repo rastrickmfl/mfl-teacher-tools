@@ -1,0 +1,1288 @@
+{
+  "v": 1,
+  "lang": "fr",
+  "year": 9,
+  "term": "1 - Autumn 1",
+  "title": "What are the advantages and disadvantages of social networks",
+  "q": {
+    "tl": "Quels sont les avantages et les inconvénients des réseaux sociaux ?",
+    "en": "What are the advantages and disadvantages of social networks?"
+  },
+  "paper": "auto",
+  "size": "auto",
+  "cols": [
+    {
+      "id": "l03kxcy4",
+      "title": "Present tense verb",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "J’envoie des messages sur WhatsApp",
+            "en": "I send messages on WhatsApp",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 11,
+                "e": 12,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 20,
+                "e": 21,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "zhahn-VWAH",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 12,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 21,
+                "p": "meh-SAHZH",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 25,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 34,
+                "p": "WAT-sap",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je partage des photos sur Snapchat",
+            "en": "I share photos on Snapchat",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 10,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 13,
+                "e": 14,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 20,
+                "e": 21,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "par-TAHZH",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 14,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 21,
+                "p": "FOH-toh",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 25,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 34,
+                "p": "SNAP-chat",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je passe du temps en ligne",
+            "en": "I spend time online",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 15,
+                "e": 17,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 8,
+                "p": "PAHS",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 11,
+                "p": "dew",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 17,
+                "p": "TAHN",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 20,
+                "p": "ahn",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 26,
+                "p": "LEENY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je poste des selfies sur Instagram",
+            "en": "I post selfies on Instagram",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 11,
+                "e": 12,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 19,
+                "e": 20,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 8,
+                "p": "POHST",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 12,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 20,
+                "p": "SEL-fee",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 24,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 34,
+                "p": "EEN-stah-gram",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je reste en contact avec ma famille sur Facebook",
+            "en": "I stay in contact with my family on Facebook",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 8,
+                "p": "REST",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 11,
+                "p": "ahn",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 19,
+                "p": "kohn-TAHKT",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 24,
+                "p": "ah-VEK",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 27,
+                "p": "mah",
+                "on": false
+              },
+              {
+                "s": 28,
+                "e": 35,
+                "p": "fah-MEE",
+                "on": false
+              },
+              {
+                "s": 36,
+                "e": 39,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 40,
+                "e": 48,
+                "p": "FAYS-book",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je suis des influenceurs sur TikTok",
+            "en": "I follow influencers on TikTok",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 6,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 6,
+                "e": 7,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 23,
+                "e": 24,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 7,
+                "p": "swee",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 11,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 24,
+                "p": "an-flwahn-SUR",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 28,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 29,
+                "e": 35,
+                "p": "TEEK-tok",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je tchatte avec mes amis sur les réseaux sociaux",
+            "en": "I chat online with my friends on social media",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 10,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 23,
+                "e": 24,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 31,
+                "e": 32,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 39,
+                "e": 40,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 47,
+                "e": 48,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "CHAT",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 15,
+                "p": "ah-VEK",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 24,
+                "p": "may-zah-MEE",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 28,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 29,
+                "e": 40,
+                "p": "lay-ray-ZOH",
+                "on": false
+              },
+              {
+                "s": 41,
+                "e": 48,
+                "p": "soh-SYOH",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "1bb5sxqm",
+      "title": "Connective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "car",
+            "en": "because",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "kar",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "puisque",
+            "en": "since",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "pwee-SKUH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "vu que",
+            "en": "seeing as",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "VEW",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "kuh",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "ax6pob99",
+      "title": "Reason",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "c’est agréable,",
+            "en": "it is enjoyable,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 14,
+                "p": "say-tah-gray-AH-bluh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est disponible partout,",
+            "en": "it is available everywhere,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 23,
+                "e": 24,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 16,
+                "p": "dees-poh-NEE-bluh",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 24,
+                "p": "par-TOO",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est facile,",
+            "en": "it is easy,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 12,
+                "p": "fah-SEEL",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est gratuit,",
+            "en": "it is free (of charge),",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 12,
+                "e": 13,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 13,
+                "p": "grah-TWEE",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est moderne,",
+            "en": "it is modern,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 13,
+                "p": "moh-DAIRN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est populaire,",
+            "en": "it is popular,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 15,
+                "p": "poh-pew-LAIR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est rapide,",
+            "en": "it is fast/quick,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 12,
+                "p": "rah-PEED",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est social,",
+            "en": "it is social,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 3,
+                "e": 5,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 12,
+                "p": "soh-SYAHL",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "pgcbgdoj",
+      "title": "Connective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "cependant,",
+            "en": "however,",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 8,
+                "e": 9,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "suh-pahn-DAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "par contre,",
+            "en": "on the other hand,",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "par",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 10,
+                "p": "kohntr",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "plteq92f",
+      "title": "Modal verb/phrase",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "il est possible de/d’",
+            "en": "it is possible to",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 4,
+                "e": 6,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "eh",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 15,
+                "p": "poh-SEE-bluh",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 18,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 20,
+                "p": "duh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a un risque de/d’",
+            "en": "there is a risk you could",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 9,
+                "p": "uhn",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 16,
+                "p": "REESK",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 19,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 21,
+                "p": "duh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "on peut",
+            "en": "you can",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 6,
+                "e": 7,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "ohn",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 7,
+                "p": "PUH",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "6yrfgh1a",
+      "title": "Infinitive",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "devenir accro.",
+            "en": "become addicted.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 7,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "duhv-NEER",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 13,
+                "p": "ah-KROH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "être victime de cyberintimidation.",
+            "en": "be a victim of online bullying.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 4,
+                "c": "r"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "ETR",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 12,
+                "p": "veek-TEEM",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 15,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 33,
+                "p": "see-bair-an-tee-mee-dah-SYOHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "ignorer les dangers.",
+            "en": "ignore the dangers.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 6,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 6,
+                "e": 7,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 10,
+                "e": 11,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 17,
+                "e": 19,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "eeg-nuh-RAY",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 19,
+                "p": "lay-DAHN-zhay",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "lire de fausses informations.",
+            "en": "read fake news.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 4,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 27,
+                "e": 28,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "LEER",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 15,
+                "p": "FOHS",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 28,
+                "p": "an-fohr-mah-SYOHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "passer trop de temps sur l’écran.",
+            "en": "spend too much time on your screen.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 5,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 5,
+                "e": 6,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 10,
+                "e": 11,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 18,
+                "e": 20,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "pah-SAY",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 11,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 14,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 20,
+                "p": "TAHN",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 24,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 32,
+                "p": "lay-KRAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "recevoir des messages nocifs.",
+            "en": "receive harmful messages.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 8,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 11,
+                "e": 12,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 20,
+                "e": 21,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 27,
+                "e": 28,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "ruh-suh-VWAR",
+                "on": false
+              },
+              {
+                "s": 9,
+                "e": 12,
+                "p": "day",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 21,
+                "p": "meh-SAHZH",
+                "on": false
+              },
+              {
+                "s": 22,
+                "e": 28,
+                "p": "noh-SEEF",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "se comparer aux autres.",
+            "en": "compare yourself to others.",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 0,
+                "e": 10,
+                "c": "r"
+              },
+              {
+                "lang": "tl",
+                "s": 10,
+                "e": 11,
+                "c": "s"
+              },
+              {
+                "lang": "tl",
+                "s": 21,
+                "e": 22,
+                "c": "s"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "suh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 11,
+                "p": "kohm-pah-RAY",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 22,
+                "p": "oh-ZOH-truh",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "updated": 1792250275997
+}

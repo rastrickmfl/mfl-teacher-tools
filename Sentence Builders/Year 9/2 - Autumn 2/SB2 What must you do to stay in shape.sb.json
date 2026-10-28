@@ -1,0 +1,1369 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 9,
+ "term": "2 - Autumn 2",
+ "title": "SB2 What must you do to stay in shape",
+ "q": {
+  "tl": "Que faut-il faire pour garder la forme ?",
+  "en": "What must you do to stay in shape?"
+ },
+ "paper": "A4fold",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "mt2boryk",
+   "title": "Opinion phrase",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "À mon avis",
+      "en": "In my opinion",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 1,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 2,
+        "e": 10,
+        "p": "mohn-nah-VEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Je crois que",
+      "en": "I believe that",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 7,
+        "e": 8,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "KRWAH",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 12,
+        "p": "kuh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Je dirais que",
+      "en": "I would say that",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "dee-RAY",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "kuh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Je pense que",
+      "en": "I think that",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "PAHNS",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 12,
+        "p": "kuh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Selon moi",
+      "en": "According to me",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "suh-LOHN",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "MWAH",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "78tu6en1",
+   "title": "Modal verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "il faut",
+      "en": "you must",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "FOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je dois",
+      "en": "I have to",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "DWAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "on devrait",
+      "en": "we should",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ohn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "duh-VREH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "on doit",
+      "en": "we have to",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ohn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "DWAH",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "il ne faut pas",
+      "en": "you must not",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 13,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "nuh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "FOH",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "PAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je ne dois pas",
+      "en": "I must not",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 13,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "nuh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "DWAH",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "PAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "on ne devrait pas",
+      "en": "we should not",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 12,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 16,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 17,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ohn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "nuh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 13,
+        "p": "duh-VREH",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 17,
+        "p": "PAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "on ne doit pas",
+      "en": "we must not",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 13,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "ohn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "nuh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "DWAH",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "PAH",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "pm7502lu",
+   "title": "Infinitive",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "aller à la gym",
+      "en": "to go to the gym",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 4,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "ah-LAY",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 7,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 14,
+        "p": "ZHEEM",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "bien dormir",
+      "en": "to sleep well",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 11,
+        "c": "p"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "BYAN",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 11,
+        "p": "dor-MEER",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "bien manger",
+      "en": "to eat well",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 10,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "BYAN",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 11,
+        "p": "mahn-ZHAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "boire beaucoup d’eau",
+      "en": "to drink lots of water",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "BWAHR",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 14,
+        "p": "boh-KOO",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 20,
+        "p": "DOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "éviter trop de fast-food",
+      "en": "to avoid too much fast-food",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 6,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "ay-vee-TAY",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 11,
+        "p": "TROH",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 14,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 24,
+        "p": "fast-FOOD",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "faire de l’exercice",
+      "en": "to do exercise",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "p"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "FAIR",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 8,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 19,
+        "p": "leg-zair-SEES",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "boire d’alcool",
+      "en": "to drink alcohol",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "p"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "BWAHR",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 14,
+        "p": "dal-KOL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "fumer",
+      "en": "to smoke",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 4,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "few-MAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "manger de fast-food",
+      "en": "to eat fast-food",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 5,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 5,
+        "e": 6,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "mahn-ZHAY",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 9,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 19,
+        "p": "fast-FOOD",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "se coucher tard",
+      "en": "to go to bed late",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 14,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "suh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "koo-SHAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "TAR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vapoter",
+      "en": "to vape",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "p"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "vah-poh-TAY",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "5eakfrsd",
+   "title": "Reason why",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "parce que ça diminue le stress.",
+      "en": "because it reduces stress.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 20,
+        "p": "dee-mee-NEW",
+        "on": false
+       },
+       {
+        "s": 21,
+        "e": 23,
+        "p": "luh",
+        "on": false
+       },
+       {
+        "s": 24,
+        "e": 30,
+        "p": "STRESS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est bon pour le mental.",
+      "en": "because it’s good for your mind.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 19,
+        "p": "BOHN",
+        "on": false
+       },
+       {
+        "s": 20,
+        "e": 24,
+        "p": "poor",
+        "on": false
+       },
+       {
+        "s": 25,
+        "e": 27,
+        "p": "luh",
+        "on": false
+       },
+       {
+        "s": 28,
+        "e": 34,
+        "p": "mahn-TAL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce qu’on peut rester fort(e).",
+      "en": "because we can stay strong.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 15,
+        "e": 16,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 22,
+        "e": 23,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 11,
+        "p": "kohn",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 16,
+        "p": "PUH",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 23,
+        "p": "ress-TAY",
+        "on": false
+       },
+       {
+        "s": 24,
+        "e": 31,
+        "p": "FOR(T)",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce qu’on peut se concentrer.",
+      "en": "because we can concentrate.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 15,
+        "e": 16,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 29,
+        "e": 30,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 11,
+        "p": "kohn",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 16,
+        "p": "PUH",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 19,
+        "p": "suh",
+        "on": false
+       },
+       {
+        "s": 20,
+        "e": 30,
+        "p": "kohn-sahn-TRAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est sain.",
+      "en": "because it’s healthy.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 20,
+        "p": "SAN",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "parce que ça peut tuer.",
+      "en": "because it can kill.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 16,
+        "e": 17,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 21,
+        "e": 22,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "sah",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 17,
+        "p": "PUH",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 22,
+        "p": "tew-AY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est dangereux.",
+      "en": "because it’s dangerous.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 24,
+        "e": 25,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 25,
+        "p": "dahn-zhuh-RUH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est inquiétant.",
+      "en": "because it’s worrying.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 25,
+        "e": 26,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 26,
+        "p": "say-tan-kyay-TAHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "parce que c’est malsain.",
+      "en": "because it’s unhealthy.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 15,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "pars",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "kuh",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 15,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 23,
+        "p": "mal-SAN",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  }
+ ],
+ "updated": 1792510368826,
+ "tier": ""
+}

@@ -1,0 +1,273 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can count to 31",
+ "q": {
+  "tl": "I can count to 31",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "o5b87ndm",
+   "title": "Number",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "dieciséis",
+      "en": "16",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "dyeh-thee-SAYSS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diecisiete",
+      "en": "17",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "dyeh-thee-SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dieciocho",
+      "en": "18",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "dyeh-thee-OH-choh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diecinueve",
+      "en": "19",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "dyeh-thee-NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veinte",
+      "en": "20",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "BAYN-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiuno",
+      "en": "21",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "bayn-tee-OO-noh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintidós",
+      "en": "22",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "bayn-tee-DOHS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintitrés",
+      "en": "23",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-TRESS",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "48t1pw12",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "veinticuatro",
+      "en": "24",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 12,
+        "p": "bayn-tee-KWAH-troh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veinticinco",
+      "en": "25",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-THEEN-koh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiséis",
+      "en": "26",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-SAYSS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintisiete",
+      "en": "27",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiocho",
+      "en": "28",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-OH-choh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintinueve",
+      "en": "29",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treinta",
+      "en": "30",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "TRAYN-tah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treinta y uno",
+      "en": "31",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "TRAYN-tah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 9,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "OO-noh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

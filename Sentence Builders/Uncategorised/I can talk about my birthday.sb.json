@@ -1,0 +1,1009 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can talk about my birthday",
+ "q": {
+  "tl": "I can talk about my birthday",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "x6q5uo68",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Quelle est la date de ton anniversaire ?",
+      "en": "What is the date of your birthday?",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "kel",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 10,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 18,
+        "p": "daht",
+        "on": false
+       },
+       {
+        "s": 19,
+        "e": 21,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 22,
+        "e": 25,
+        "p": "tohn",
+        "on": false
+       },
+       {
+        "s": 26,
+        "e": 38,
+        "p": "ah-nee-vair-SAIR",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "0jhacuyv",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Mon anniversaire, c’est le",
+      "en": "My birthday is on the",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 21,
+        "e": 23,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "mohn",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 16,
+        "p": "ah-nee-vair-SAIR",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 23,
+        "p": "say",
+        "on": false
+       },
+       {
+        "s": 24,
+        "e": 26,
+        "p": "luh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "9dy7hl3b",
+   "title": "Number",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "premier",
+      "en": "1st",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "pruh-MYAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "deux",
+      "en": "2nd",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "duh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trois",
+      "en": "3rd",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "trwah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quatre",
+      "en": "4th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KAH-truh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cinq",
+      "en": "5th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "sank",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "six",
+      "en": "6th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "sees",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "sept",
+      "en": "7th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "huit",
+      "en": "8th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 1,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "neuf",
+      "en": "9th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix",
+      "en": "10th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "onze",
+      "en": "11th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "ohnz",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "douze",
+      "en": "12th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "dooz",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treize",
+      "en": "13th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trez",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quatorze",
+      "en": "14th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "kah-TORZ",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quinze",
+      "en": "15th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "kanz",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "seize",
+      "en": "16th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "sez",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-sept",
+      "en": "17th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-huit",
+      "en": "18th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dix-neuf",
+      "en": "19th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dees",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 8,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt",
+      "en": "20th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-et-un",
+      "en": "21st",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 7,
+        "e": 8,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 8,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 11,
+        "p": "uhn",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-deux",
+      "en": "22nd",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "duh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-trois",
+      "en": "23rd",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 11,
+        "p": "trwah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-quatre",
+      "en": "24th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 12,
+        "p": "KAH-truh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-cinq",
+      "en": "25th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "sank",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-six",
+      "en": "26th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 9,
+        "p": "sees",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-sept",
+      "en": "27th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "set",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-huit",
+      "en": "28th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "weet",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "vingt-neuf",
+      "en": "29th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 4,
+        "e": 5,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "van",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "nurf",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trente",
+      "en": "30th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trahnt",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trente-et-un",
+      "en": "31st",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "trahnt",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 9,
+        "p": "ay",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "uhn",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "oc7y195j",
+   "title": "Month",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "janvier",
+      "en": "of January",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zhahn-VYAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "février",
+      "en": "of February",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "FAY-vree-AY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "mars",
+      "en": "of March",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "mahrs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "avril",
+      "en": "of April",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "ah-VREEL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "mai",
+      "en": "of May",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "may",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "juin",
+      "en": "of June",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhwan",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "juillet",
+      "en": "of July",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "zhwee-YAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "août",
+      "en": "of August",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 3,
+        "e": 4,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "oo",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "septembre",
+      "en": "of September",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "sep-TAHN-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "octobre",
+      "en": "of October",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "ok-TOH-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "novembre",
+      "en": "of November",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "noh-VAHN-bruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "décembre",
+      "en": "of December",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 8,
+        "p": "day-SAHN-bruh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458445,
+ "uncat": true
+}

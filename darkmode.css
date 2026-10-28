@@ -1,0 +1,50 @@
+/* darkmode.css: v1.89 dark mode for the whole app (dashboard, Library, Printing Centre, Achievement Points, Settings and every menu / dialog on them).
+   theme.js puts data-app-theme="light|dark" on <html> (from the same sv_editor_theme choice the editor uses), and this file re-points the app's
+   colour variables at dark neutrals. Loaded last. The editor keeps its own year-tinted dark (ribbon.css, [data-theme="dark"]) and the
+   presenting screens are always dark already (--dark-*), so neither is touched here. Delete this <link> to remove dark mode. */
+
+html[data-app-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121214; --surface:#1B1B1E; --sunken:#29292D; --border:#2C2C31; --border-strong:#3C3C43;
+  --text:#F3F3F5; --text-2:#A8A8B3; --text-3:#8D8D99;
+  --accent:#7D9CFF; --accent-hover:#9BB3FF; --accent-soft:#1F2A4D; --accent-ink:#A9BDFF; --accent-on:#111113;
+  --danger:#FF7B6E; --danger-soft:#43211F; --warn:#F0B35A; --warn-soft:#3A2C12; --ok:#4CCB86; --ok-soft:#14301F;
+  --shadow-float:0 12px 32px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.3);
+}
+html[data-app-theme="dark"], html[data-app-theme="dark"] body{ background:var(--bg); color:var(--text); }
+
+/* Buttons that fill with the accent carry white text; the lightened dark-mode accent needs dark text. */
+html[data-app-theme="dark"] .btn.primary, html[data-app-theme="dark"] .hn-badge{ color:var(--accent-on); }
+html[data-app-theme="dark"] .hn-badge{ background:#4CCB86; }
+html[data-app-theme="dark"] .hn-badge.urgent{ background:var(--danger); color:#1A0A08; }
+html[data-app-theme="dark"] .hn.urgent{ color:var(--danger); }
+
+/* Hard-coded light greys in styles.css / printcentre.css */
+html[data-app-theme="dark"] .days{ background:var(--sunken); }
+html[data-app-theme="dark"] .dr[data-sel]:hover{ background:color-mix(in srgb, var(--accent) 6%, var(--surface)); }
+html[data-app-theme="dark"] .pill.y7{ background-color:#26331A; color:#BFE077; }
+html[data-app-theme="dark"] .pill.y8{ background-color:#123340; color:#7DD3E4; }
+html[data-app-theme="dark"] .pill.y9{ background-color:#3D1B30; color:#F59CCF; }
+html[data-app-theme="dark"] .pill.y10{ background-color:#2F1D2E; color:#D6A8D3; }
+html[data-app-theme="dark"] .pill.y11{ background-color:#2D2D2C; color:#D4D4D2; }
+html[data-app-theme="dark"] .pill.yn{ background-color:var(--sunken); color:var(--text-2); }
+html[data-app-theme="dark"] .pc-ftype.t-pdf, html[data-app-theme="dark"] .tag.pc-t-pdf{ background:#43211F; color:#FF9C90; }
+html[data-app-theme="dark"] .pc-ftype.t-docx, html[data-app-theme="dark"] .tag.pc-t-docx{ background:#1C2C4D; color:#8FB0FF; }
+html[data-app-theme="dark"] .pc-ftype.t-pptx, html[data-app-theme="dark"] .tag.pc-t-pptx{ background:#442A17; color:#FFAE75; }
+html[data-app-theme="dark"] .pc-badge{ color:#1A0A08; }
+
+/* Library: the selected-year chip and the selection bar are var(--text) fills with white text; flip the text to the page colour. */
+html[data-app-theme="dark"] .lb-yr.on{ color:var(--bg); }
+html[data-app-theme="dark"] .lb-full.lb-has-sel .lb-foot{ color:var(--bg); }
+html[data-app-theme="dark"] .lb-full.lb-has-sel .lb-foot .btn{ color:var(--bg); border-color:rgba(0,0,0,.3); }
+html[data-app-theme="dark"] .lb-full.lb-has-sel .lb-foot .btn:hover{ background:rgba(0,0,0,.1); }
+html[data-app-theme="dark"] .lb-full.lb-has-sel .lb-foot .icon-btn, html[data-app-theme="dark"] .lb-full.lb-has-sel .lb-foot .lb-selcount{ color:var(--bg); }
+
+/* Toasts are var(--text) fills too */
+html[data-app-theme="dark"] .toast{ color:var(--bg); }
+html[data-app-theme="dark"] .toast.lb-undo button{ color:var(--bg); }
+
+/* Thumbnails and slide previews stay white (they show the slide itself), but their surrounds follow the theme. */
+html[data-app-theme="dark"] .imp-cell .tick{ background:var(--surface); }
+html[data-app-theme="dark"] .ed-spick button:hover{ background:var(--sunken); }
+html[data-app-theme="dark"] input, html[data-app-theme="dark"] select, html[data-app-theme="dark"] textarea{ color-scheme:dark; }

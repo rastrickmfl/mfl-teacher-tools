@@ -1,0 +1,824 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can talk about my birthday",
+ "q": {
+  "tl": "I can talk about my birthday",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "sxiey3zf",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Cuándo es tu cumpleaños?",
+      "en": "When is your birthday?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 7,
+        "p": "KWAN-doh",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 10,
+        "p": "ess",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "too",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 24,
+        "p": "koom-pleh-AN-yohs",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "9spxgf9f",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Mi cumpleaños es el",
+      "en": "My birthday is on the",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "mee",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 13,
+        "p": "koom-pleh-AN-yohs",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 16,
+        "p": "ess",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 19,
+        "p": "el",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "t0ujiv7d",
+   "title": "Number",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "uno",
+      "en": "1st",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "OO-noh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dos",
+      "en": "2nd",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dohs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "tres",
+      "en": "3rd",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "tress",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cuatro",
+      "en": "4th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KWAH-troh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cinco",
+      "en": "5th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "THEEN-koh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "seis",
+      "en": "6th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "sayss",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "siete",
+      "en": "7th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "ocho",
+      "en": "8th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "OH-choh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "nueve",
+      "en": "9th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diez",
+      "en": "10th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dyeth",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "once",
+      "en": "11th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "ON-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "doce",
+      "en": "12th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "DOH-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trece",
+      "en": "13th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "TREH-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "catorce",
+      "en": "14th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "kah-TOR-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quince",
+      "en": "15th",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KEEN-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dieciséis",
+      "en": "16th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "dyeh-thee-SAYSS",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "v1z61cyh",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "diecisiete",
+      "en": "17th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "dyeh-thee-SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dieciocho",
+      "en": "18th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "dyeh-thee-OH-choh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diecinueve",
+      "en": "19th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "dyeh-thee-NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veinte",
+      "en": "20th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "BAYN-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiuno",
+      "en": "21st",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "bayn-tee-OO-noh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintidós",
+      "en": "22nd",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 9,
+        "p": "bayn-tee-DOHS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintitrés",
+      "en": "23rd",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-TRESS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veinticuatro",
+      "en": "24th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 12,
+        "p": "bayn-tee-KWAH-troh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veinticinco",
+      "en": "25th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-THEEN-koh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiséis",
+      "en": "26th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-SAYSS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintisiete",
+      "en": "27th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintiocho",
+      "en": "28th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "bayn-tee-OH-choh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "veintinueve",
+      "en": "29th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 11,
+        "p": "bayn-tee-NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treinta",
+      "en": "30th",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "TRAYN-tah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "treinta y uno",
+      "en": "31st",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "TRAYN-tah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 9,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "OO-noh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "qex7gbx4",
+   "title": "Month",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "de enero",
+      "en": "of January",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "eh-NEH-roh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de febrero",
+      "en": "of February",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "feh-BREH-roh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de marzo",
+      "en": "of March",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "MAR-thoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de abril",
+      "en": "of April",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "ah-BREEL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de mayo",
+      "en": "of May",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "MAH-yoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de junio",
+      "en": "of June",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "HOO-nyoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de julio",
+      "en": "of July",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "HOO-lyoh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de agosto",
+      "en": "of August",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "ah-GOSS-toh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de septiembre",
+      "en": "of September",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 13,
+        "p": "sep-TYEM-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de octubre",
+      "en": "of October",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "ok-TOO-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de noviembre",
+      "en": "of November",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "noh-BYEM-breh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "de diciembre",
+      "en": "of December",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "deh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "dee-THYEM-breh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

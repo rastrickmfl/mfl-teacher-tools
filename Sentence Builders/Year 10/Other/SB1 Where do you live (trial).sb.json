@@ -1,0 +1,1083 @@
+{
+  "v": 1,
+  "lang": "fr",
+  "year": 10,
+  "term": "Other",
+  "title": "SB1 Where do you live (trial)",
+  "q": {
+    "tl": "Où habites-tu ?",
+    "en": "Where do you live?"
+  },
+  "paper": "auto",
+  "size": 12,
+  "cols": [
+    {
+      "id": "4gvt4ken",
+      "title": "Verb phrase",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "J’habite",
+            "en": "I live",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "zhah-BEET",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "Je vis",
+            "en": "I live",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "VEE",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "n3zubnjl",
+      "title": "Location",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "à la banlieue de (town).",
+            "en": "on the outskirts of (town).",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 1,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 2,
+                "e": 4,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 13,
+                "p": "bahn-LYUH",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 16,
+                "p": "duh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "à la campagne.",
+            "en": "in the countryside.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 1,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 2,
+                "e": 4,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 13,
+                "p": "kahn-PAHNY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "à la montagne.",
+            "en": "in the mountains.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 1,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 2,
+                "e": 4,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 13,
+                "p": "mohn-TAHNY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "au bord de la mer.",
+            "en": "by the sea.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "oh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 7,
+                "p": "BOR",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 10,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 13,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 17,
+                "p": "MAIR",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "au centre-ville.",
+            "en": "in the town centre.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "oh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 15,
+                "p": "SAHN-truh-VEEL",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "dans le nord/le sud/l’est/l’ouest.",
+            "en": "in the north, south, east, west.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 4,
+                "p": "dahn",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 7,
+                "p": "luh",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 12,
+                "p": "NOR",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 15,
+                "p": "luh",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 19,
+                "p": "SEWD",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "LEH",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 33,
+                "p": "LWEST",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "o5pa3hil",
+      "title": "Positive opinion phrase",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "J’adore ma ville parce que c’est",
+            "en": "I love my town because it is",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "zhah-DOR",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 10,
+                "p": "mah",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 16,
+                "p": "VEEL",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 22,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 23,
+                "e": 26,
+                "p": "kuh",
+                "on": false
+              },
+              {
+                "s": 27,
+                "e": 32,
+                "p": "say",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "J’adore y habiter parce que c’est",
+            "en": "I love living here because it is",
+            "say": "",
+            "marks": [
+              {
+                "lang": "tl",
+                "s": 8,
+                "e": 9,
+                "c": "p"
+              }
+            ],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "zhah-DOR",
+                "on": false
+              },
+              {
+                "s": 8,
+                "e": 9,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 17,
+                "p": "ah-bee-TAY",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 23,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 24,
+                "e": 27,
+                "p": "kuh",
+                "on": false
+              },
+              {
+                "s": 28,
+                "e": 33,
+                "p": "say",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "J’aime bien ma ville parce que c’est",
+            "en": "I really like my town because it is",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "zhem",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 11,
+                "p": "BYAN",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 14,
+                "p": "mah",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 20,
+                "p": "VEEL",
+                "on": false
+              },
+              {
+                "s": 21,
+                "e": 26,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 27,
+                "e": 30,
+                "p": "kuh",
+                "on": false
+              },
+              {
+                "s": 31,
+                "e": 36,
+                "p": "say",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "5outiu79",
+      "title": "Adjective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "animé",
+            "en": "lively",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "ah-nee-MAY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "célèbre",
+            "en": "famous",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "say-LEB-ruh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "historique",
+            "en": "historic",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 10,
+                "p": "ees-toh-REEK",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "industriel",
+            "en": "industrial",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 10,
+                "p": "an-dus-tree-EL",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "moderne",
+            "en": "modern",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 7,
+                "p": "moh-DAIRN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "propre",
+            "en": "clean",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 6,
+                "p": "PROH-pruh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "touristique",
+            "en": "touristy",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 11,
+                "p": "too-ree-STEEK",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "tranquille",
+            "en": "calm/quiet",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 10,
+                "p": "trahn-KEEL",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vw8t6b8w",
+      "title": "Connective",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "cependant",
+            "en": "however",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 9,
+                "p": "suh-pahn-DAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "de l’autre côté",
+            "en": "on the other hand",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "loh-TRUH",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 15,
+                "p": "koh-TAY",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "pourtant",
+            "en": "yet",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 8,
+                "p": "poor-TAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "à l’inverse",
+            "en": "conversely",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 1,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 2,
+                "e": 11,
+                "p": "lan-VAIRS",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "nn9dk8fr",
+      "title": "Negative opinion",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "je ne l’aime pas parce que",
+            "en": "I don’t like it because",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 5,
+                "p": "nuh",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 12,
+                "p": "lem",
+                "on": false
+              },
+              {
+                "s": 13,
+                "e": 16,
+                "p": "pah",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 22,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 23,
+                "e": 26,
+                "p": "kuh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "je déteste ma ville parce que",
+            "en": "I hate my town because",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "zhuh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 10,
+                "p": "day-TEST",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 13,
+                "p": "mah",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 19,
+                "p": "VEEL",
+                "on": false
+              },
+              {
+                "s": 20,
+                "e": 25,
+                "p": "pars",
+                "on": false
+              },
+              {
+                "s": 26,
+                "e": 29,
+                "p": "kuh",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "o3noqmlc",
+      "title": "Reason",
+      "sub": "auto",
+      "width": null,
+      "groups": [
+        [
+          {
+            "tl": "il y a beaucoup de chômage.",
+            "en": "there is a lot of unemployment.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 15,
+                "p": "boh-KOO",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 18,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 19,
+                "e": 26,
+                "p": "shoh-MAHZH",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a trop de circulation.",
+            "en": "there is too much traffic.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 11,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 14,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 26,
+                "p": "seer-kew-lah-SYOHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a trop de pollution.",
+            "en": "there is too much pollution.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 11,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 14,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 24,
+                "p": "poh-loo-SYOHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "la vie est plus barbante.",
+            "en": "life is more boring.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "lah",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 6,
+                "p": "VEE",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 10,
+                "p": "eh",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 15,
+                "p": "ploo",
+                "on": false
+              },
+              {
+                "s": 16,
+                "e": 24,
+                "p": "bar-BAHNT",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "le centre est si bruyant.",
+            "en": "the centre is so noisy.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "luh",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 9,
+                "p": "SAHN-truh",
+                "on": false
+              },
+              {
+                "s": 10,
+                "e": 13,
+                "p": "eh",
+                "on": false
+              },
+              {
+                "s": 14,
+                "e": 16,
+                "p": "see",
+                "on": false
+              },
+              {
+                "s": 17,
+                "e": 24,
+                "p": "brwee-YAHN",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "les transports en commun ne sont pas fiables.",
+            "en": "the public transport is not reliable.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 3,
+                "p": "lay",
+                "on": false
+              },
+              {
+                "s": 4,
+                "e": 14,
+                "p": "trahns-POR",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 17,
+                "p": "ahn",
+                "on": false
+              },
+              {
+                "s": 18,
+                "e": 24,
+                "p": "koh-MUHN",
+                "on": false
+              },
+              {
+                "s": 25,
+                "e": 27,
+                "p": "nuh",
+                "on": false
+              },
+              {
+                "s": 28,
+                "e": 32,
+                "p": "sohn",
+                "on": false
+              },
+              {
+                "s": 33,
+                "e": 36,
+                "p": "pah",
+                "on": false
+              },
+              {
+                "s": 37,
+                "e": 44,
+                "p": "fee-AH-bluh",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "c’est trop sale.",
+            "en": "it is too dirty.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 5,
+                "p": "say",
+                "on": false
+              },
+              {
+                "s": 6,
+                "e": 10,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 11,
+                "e": 15,
+                "p": "SAHL",
+                "on": false
+              }
+            ]
+          },
+          {
+            "tl": "il y a trop de déchets sur les rues.",
+            "en": "there is too much rubbish on the roads.",
+            "say": "",
+            "marks": [],
+            "phon": [
+              {
+                "s": 0,
+                "e": 2,
+                "p": "eel",
+                "on": false
+              },
+              {
+                "s": 3,
+                "e": 4,
+                "p": "ee",
+                "on": false
+              },
+              {
+                "s": 5,
+                "e": 6,
+                "p": "ah",
+                "on": false
+              },
+              {
+                "s": 7,
+                "e": 11,
+                "p": "troh",
+                "on": false
+              },
+              {
+                "s": 12,
+                "e": 14,
+                "p": "duh",
+                "on": false
+              },
+              {
+                "s": 15,
+                "e": 22,
+                "p": "day-SHAY",
+                "on": false
+              },
+              {
+                "s": 23,
+                "e": 26,
+                "p": "sewr",
+                "on": false
+              },
+              {
+                "s": 27,
+                "e": 30,
+                "p": "lay",
+                "on": false
+              },
+              {
+                "s": 31,
+                "e": 35,
+                "p": "REW",
+                "on": false
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "updated": 1792250275574
+}

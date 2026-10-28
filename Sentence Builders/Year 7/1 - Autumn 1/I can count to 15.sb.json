@@ -1,0 +1,254 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can count to 15",
+ "q": {
+  "tl": "I can count to 15",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "j67xawj9",
+   "title": "Number",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "uno",
+      "en": "1",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "OO-noh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "dos",
+      "en": "2",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "dohs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "tres",
+      "en": "3",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "tress",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cuatro",
+      "en": "4",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KWAH-troh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cinco",
+      "en": "5",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "THEEN-koh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "seis",
+      "en": "6",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "sayss",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "siete",
+      "en": "7",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "SYEH-teh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "ocho",
+      "en": "8",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "OH-choh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": true
+  },
+  {
+   "id": "h3av5fty",
+   "title": "",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "nueve",
+      "en": "9",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "NWEH-beh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "diez",
+      "en": "10",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dyeth",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "once",
+      "en": "11",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "ON-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "doce",
+      "en": "12",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "DOH-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "trece",
+      "en": "13",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "TREH-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "catorce",
+      "en": "14",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "kah-TOR-theh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "quince",
+      "en": "15",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 1,
+        "e": 2,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "KEEN-theh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

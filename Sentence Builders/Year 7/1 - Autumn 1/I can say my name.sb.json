@@ -1,0 +1,112 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can say my name",
+ "q": {
+  "tl": "I can say my name",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "oxfoha95",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Cómo te llamas?",
+      "en": "What do you call yourself?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 5,
+        "p": "KOH-moh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 8,
+        "p": "teh",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 15,
+        "p": "YAH-mahs",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "ahkr4172",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Me llamo …,",
+      "en": "I call myself…",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "meh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "YAH-moh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "nmlbd75h",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿y tú?",
+      "en": "and you?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 2,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "too",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478300
+}

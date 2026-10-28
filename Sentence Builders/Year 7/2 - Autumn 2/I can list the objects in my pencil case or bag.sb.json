@@ -1,0 +1,488 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 7,
+ "term": "2 - Autumn 2",
+ "title": "I can list the objects in my pencil case or bag",
+ "q": {
+  "tl": "I can list the objects in my pencil case or bag",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "lzpwrtfo",
+   "title": "Where",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Dans mon sac",
+      "en": "In my bag",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dahn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 8,
+        "p": "mohn",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 12,
+        "p": "sak",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Dans ma trousse",
+      "en": "In my pencil case",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "dahn",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 7,
+        "p": "mah",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 15,
+        "p": "troos",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "hax083ql",
+   "title": "Verb",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "il y a",
+      "en": "there is",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 4,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 6,
+        "p": "ah",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai",
+      "en": "I have",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "i64192bg",
+   "title": "Object",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "un agenda",
+      "en": "a planner/diary",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "ah-zhahn-DAH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un cahier",
+      "en": "an exercise book",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 9,
+        "p": "kah-YAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une calculatrice",
+      "en": "a calculator",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 16,
+        "p": "kal-kyoo-lah-TREESS",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une gomme",
+      "en": "a rubber",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "gom",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un portable",
+      "en": "a phone",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "pohr-TAH-bl",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "une règle",
+      "en": "a ruler",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 3,
+        "p": "oon",
+        "on": false
+       },
+       {
+        "s": 4,
+        "e": 9,
+        "p": "REH-gl",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un stylo noir",
+      "en": "a black pen",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "stee-LOH",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 13,
+        "p": "nwahr",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un stylo bleu",
+      "en": "a blue pen",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "stee-LOH",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 13,
+        "p": "bluh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un stylo rouge",
+      "en": "a red pen",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "stee-LOH",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 14,
+        "p": "roozh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un stylo vert",
+      "en": "a green pen",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 8,
+        "p": "stee-LOH",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 13,
+        "p": "vair",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "l78ax2xo",
+   "title": "Negative",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Je n’ai pas de stylo noir",
+      "en": "I don’t have a black pen",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "nay",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 11,
+        "p": "pah",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 14,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 20,
+        "p": "stee-LOH",
+        "on": false
+       },
+       {
+        "s": 21,
+        "e": 25,
+        "p": "nwahr",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Il n’y a pas de gomme",
+      "en": "There isn’t a rubber",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 11,
+        "e": 12,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 6,
+        "p": "nee",
+        "on": false
+       },
+       {
+        "s": 7,
+        "e": 8,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 12,
+        "p": "pah",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 15,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 21,
+        "p": "gom",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792343458446
+}

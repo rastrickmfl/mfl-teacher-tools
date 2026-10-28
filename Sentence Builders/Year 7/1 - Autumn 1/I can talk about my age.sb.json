@@ -1,0 +1,144 @@
+{
+ "v": 1,
+ "lang": "es",
+ "year": 7,
+ "term": "1 - Autumn 1",
+ "title": "I can talk about my age",
+ "q": {
+  "tl": "I can talk about my age",
+  "en": ""
+ },
+ "paper": "auto",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "sgcnpypx",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿Cuántos años tienes?",
+      "en": "How many years do you have?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 8,
+        "p": "KWAN-tohs",
+        "on": false
+       },
+       {
+        "s": 9,
+        "e": 13,
+        "p": "AN-yohs",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 20,
+        "p": "TYEH-ness",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "uxvkztlg",
+   "title": "Answer",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Tengo once años,",
+      "en": "I have 11 years",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "TEN-goh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "ON-theh",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "AN-yohs",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Tengo doce años,",
+      "en": "I have 12 years",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "TEN-goh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "DOH-theh",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "AN-yohs",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "id": "ic7x4ktw",
+   "title": "Question",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "¿y tú?",
+      "en": "and you?",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 1,
+        "e": 2,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "too",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "updated": 1792315478301
+}

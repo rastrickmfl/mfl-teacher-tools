@@ -1,0 +1,1339 @@
+{
+ "v": 1,
+ "lang": "fr",
+ "year": 8,
+ "term": "1 - Autumn 1",
+ "title": "SB2 What did you do on your holiday",
+ "q": {
+  "tl": "Qu’est-ce que tu as fait en vacances ?",
+  "en": "What did you do on your holiday?"
+ },
+ "paper": "A4",
+ "size": "auto",
+ "cols": [
+  {
+   "id": "x39qrbat",
+   "title": "Time phrase & Weather",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "Le dernier jour,",
+      "en": "On the last day,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "luh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "dair-NYAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "ZHOOR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Le premier jour,",
+      "en": "On the first day,",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "luh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "pruh-MYAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "ZHOOR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "Le deuxième jour,",
+      "en": "On the second day,",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "luh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "duh-zee-EM",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 16,
+        "p": "ZHOOR",
+        "on": false
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "tl": "il faisait beau et",
+      "en": "it was nice weather and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 17,
+        "e": 18,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "fuh-ZAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 15,
+        "p": "BOH",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 18,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "il faisait froid et",
+      "en": "it was cold and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 15,
+        "e": 16,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 18,
+        "e": 19,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 10,
+        "p": "fuh-ZAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 16,
+        "p": "FRWAH",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 19,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "il neigeait et",
+      "en": "it snowed and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "nay-ZHAY",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 14,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "il pleuvait et",
+      "en": "it rained and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 11,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "pluh-VAY",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 14,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "il y avait du soleil et",
+      "en": "it was sunny and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 22,
+        "e": 23,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 4,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "ah-VAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 20,
+        "p": "soh-LAY",
+        "on": false
+       },
+       {
+        "s": 21,
+        "e": 23,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "il y avait du vent et",
+      "en": "it was windy and",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 17,
+        "e": 18,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 20,
+        "e": 21,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "eel",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 4,
+        "p": "ee",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "ah-VAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 18,
+        "p": "VAHN",
+        "on": false
+       },
+       {
+        "s": 19,
+        "e": 21,
+        "p": "ay",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "y74pwgit",
+   "title": "Perfect tense activity",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "j’ai acheté des souvenirs",
+      "en": "I bought some souvenirs",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 11,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 14,
+        "e": 15,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 24,
+        "e": 25,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 11,
+        "p": "ash-TAY",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 15,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 25,
+        "p": "soo-vuh-NEER",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai fait de la voile",
+      "en": "I did sailing",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 8,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "FAY",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 15,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 21,
+        "p": "VWAHL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai fait du vélo",
+      "en": "I did cycling",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 8,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "FAY",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 12,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 17,
+        "p": "vay-LOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai mangé de la nourriture locale",
+      "en": "I ate local food",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 10,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "mahn-ZHAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 16,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 27,
+        "p": "noo-ree-TOOR",
+        "on": false
+       },
+       {
+        "s": 28,
+        "e": 34,
+        "p": "loh-KAHL",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai nagé dans la mer",
+      "en": "I swam in the sea",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 13,
+        "e": 14,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "nah-ZHAY",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 14,
+        "p": "dahn",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 17,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 21,
+        "p": "MAIR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai perdu ma valise",
+      "en": "I lost my suitcase",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 10,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "pair-DEW",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "mah",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 20,
+        "p": "vah-LEEZ",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai passé du temps avec mes amis",
+      "en": "I spent time with my friends",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 10,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 17,
+        "e": 19,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 32,
+        "e": 33,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 10,
+        "p": "pah-SAY",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 13,
+        "p": "dew",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 19,
+        "p": "TAHN",
+        "on": false
+       },
+       {
+        "s": 20,
+        "e": 24,
+        "p": "ah-VEK",
+        "on": false
+       },
+       {
+        "s": 25,
+        "e": 33,
+        "p": "may-zah-MEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai pris des photos",
+      "en": "I took photos",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 8,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 8,
+        "e": 9,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 12,
+        "e": 13,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 19,
+        "e": 20,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 9,
+        "p": "PREE",
+        "on": false
+       },
+       {
+        "s": 10,
+        "e": 13,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 14,
+        "e": 20,
+        "p": "FOH-toh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai rencontré de nouveaux amis",
+      "en": "I met some new friends",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 14,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 30,
+        "e": 31,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 14,
+        "p": "rahn-kohn-TRAY",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 17,
+        "p": "duh",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 31,
+        "p": "noo-VOH-zah-MEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai réservé des excursions",
+      "en": "I reserved some trips",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 12,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 26,
+        "e": 27,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 12,
+        "p": "ray-zair-VAY",
+        "on": false
+       },
+       {
+        "s": 13,
+        "e": 16,
+        "p": "day",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 27,
+        "p": "ek-skoor-SYOHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "j’ai visité un château",
+      "en": "I visited a castle",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 11,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhay",
+        "on": false
+       },
+       {
+        "s": 5,
+        "e": 11,
+        "p": "vee-zee-TAY",
+        "on": false
+       },
+       {
+        "s": 12,
+        "e": 14,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 15,
+        "e": 22,
+        "p": "shah-TOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je me suis bronzé(e)",
+      "en": "I sunbathed",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 9,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 9,
+        "e": 10,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 10,
+        "e": 20,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 5,
+        "p": "muh",
+        "on": false
+       },
+       {
+        "s": 6,
+        "e": 10,
+        "p": "swee",
+        "on": false
+       },
+       {
+        "s": 11,
+        "e": 17,
+        "p": "brohn-ZAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je suis allé(e) à la plage",
+      "en": "I went to the beach",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 15,
+        "c": "r"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "sweeze ah-LAY",
+        "on": false
+       },
+       {
+        "s": 16,
+        "e": 17,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 18,
+        "e": 20,
+        "p": "lah",
+        "on": false
+       },
+       {
+        "s": 21,
+        "e": 26,
+        "p": "PLAHZH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "je suis resté(e) à l’hôtel",
+      "en": "I stayed at the hotel",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 6,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       },
+       {
+        "lang": "tl",
+        "s": 7,
+        "e": 16,
+        "c": "r"
+       },
+       {
+        "lang": "tl",
+        "s": 21,
+        "e": 22,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "zhuh",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 7,
+        "p": "swee",
+        "on": false
+       },
+       {
+        "s": 8,
+        "e": 13,
+        "p": "res-TAY",
+        "on": false
+       },
+       {
+        "s": 17,
+        "e": 18,
+        "p": "ah",
+        "on": false
+       },
+       {
+        "s": 19,
+        "e": 26,
+        "p": "loh-TEL",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "9skpwklz",
+   "title": "Opinion",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "c'était",
+      "en": "it was",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "say-TAY",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  },
+  {
+   "id": "cscvbmqf",
+   "title": "Reason",
+   "sub": "auto",
+   "width": null,
+   "groups": [
+    [
+     {
+      "tl": "amusant.",
+      "en": "fun.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 6,
+        "e": 7,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 7,
+        "p": "ah-moo-ZAHN",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "animé.",
+      "en": "lively.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "ah-nee-MAY",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "beau.",
+      "en": "beautiful.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "BOH",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "calme.",
+      "en": "calm.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 5,
+        "p": "KALM",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "cher.",
+      "en": "expensive.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "SHAIR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "historique.",
+      "en": "historical.",
+      "say": "",
+      "marks": [
+       {
+        "lang": "tl",
+        "s": 0,
+        "e": 1,
+        "c": "s"
+       }
+      ],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "ees-toh-REEK",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "incroyable.",
+      "en": "incredible.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 10,
+        "p": "an-krwah-YAH-bluh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "joli.",
+      "en": "pretty.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 4,
+        "p": "zhoh-LEE",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "propre.",
+      "en": "clean.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 6,
+        "p": "PROH-pruh",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un cauchemar.",
+      "en": "a nightmare.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 12,
+        "p": "koh-shuh-MAR",
+        "on": false
+       }
+      ]
+     },
+     {
+      "tl": "un désastre.",
+      "en": "a disaster.",
+      "say": "",
+      "marks": [],
+      "phon": [
+       {
+        "s": 0,
+        "e": 2,
+        "p": "uhn",
+        "on": false
+       },
+       {
+        "s": 3,
+        "e": 11,
+        "p": "day-ZAHS-truh",
+        "on": false
+       }
+      ]
+     }
+    ]
+   ],
+   "joinNext": false
+  }
+ ],
+ "updated": 1792652076611,
+ "tier": ""
+}
