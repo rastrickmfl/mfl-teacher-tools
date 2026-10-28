@@ -172,7 +172,8 @@ button.dr-when{ cursor:pointer; }
 .tt-name{ display:block; font-size:14px; font-weight:600; color:var(--text); }
 .tt-times{ display:block; font-size:11px; color:var(--text-2); }
 .modal .tt-grid select.tt-pick{ display:block; width:100%; min-width:0; height:20px; margin:2px 0 0; border:0; border-radius:0; box-shadow:none; font:inherit; font-size:11px; color:var(--text-2); text-align:center; text-align-last:center; cursor:pointer; appearance:none; -webkit-appearance:none; padding-right:12px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%236B7280' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 4px center; }
-.modal .tt-grid tbody th select.tt-pick{ text-align:left; text-align-last:left; }
+.tt-auto{ display:block; height:20px; margin-top:2px; font-size:11px; line-height:20px; text-align:center; color:var(--text-2); }
+.tt-auto[hidden], .modal .tt-grid select.tt-pick[hidden]{ display:none; }
 .modal .tt-grid select.tt-pick:hover, .modal .tt-grid select.tt-pick:focus{ color:var(--accent); outline:none; text-decoration:underline; }
 .modal h2{ margin:0 0 4px; font-size:var(--fs-xl); font-weight:600; }
 .modal p{ color:var(--text-2); margin:0 0 12px; }

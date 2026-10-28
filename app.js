@@ -335,7 +335,14 @@ function ttChoice(tt, row, day){
   const v = tt ? tt[row.key + 'Time'] : 0;
   return row.times.length > 1 && (v && typeof v==='object' ? v[day] : v)===1 ? 1 : 0;
 }
-const ttTimes = (tt, row, day)=>row.times[ttChoice(tt, row, day)];
+// P2 and Form start at one of two times, set by the class's year group: 7, 9 and 11 take the second time (P2 10:10, Form 12:50); 8 and 10 take the first (P2 09:55, Form 12:10).
+// A code that doesn't start with a year group (after any "Form ") has no rule, so the choice made in the editor is used.
+function ttRule(code){
+  const y = /^(?:Form\s+)?(\d{1,2})/i.exec(String(code || '').trim());
+  const n = y ? Number(y[1]) : 0;
+  return [7, 9, 11].includes(n) ? 1 : [8, 10].includes(n) ? 0 : null;
+}
+const ttTimes = (tt, row, day, code)=>{ const r = row.times.length > 1 ? ttRule(code) : null; return row.times[r==null ? ttChoice(tt, row, day) : r]; };
 const Planner = {
   handle:null, data:null, source:null, fileName:'', needsPerm:false, error:'',
   valid(d){ return d && Array.isArray(d.slots); },
@@ -378,7 +385,7 @@ const Planner = {
         let code = String(col[i] || '').trim();
         if(!code) return;
         if(row.form && !/^Form\b/.test(code)) code = 'Form ' + code; // "8F" → "Form 8F", so it is treated as a form session
-        const [start, end] = ttTimes(tt, row, day);
+        const [start, end] = ttTimes(tt, row, day, code);
         slots.push(row.form ? { id:`d${day}form`, day, start, end, label:code } : { id:`d${day}p${row.period}`, day, period:row.period, start, end, label:code });
       });
     }
@@ -412,16 +419,13 @@ function openTimetable(){
   const head = row=>{
     const nm = `<span class="tt-name">${row.name}</span>`;
     if(row.times.length===1) return `<th scope="row">${nm}<span class="tt-times">${timeText(row.times[0])}</span></th>`;
-    if(row.key==='p2') return `<th scope="row">${nm}<span class="tt-times">varies by day</span></th>`;
-    // Form: one time for every day.
-    const cur = ttChoice(tt, row);
-    return `<th scope="row">${nm}<select class="tt-pick" data-ft aria-label="Form time">${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select></th>`;
+    return `<th scope="row">${nm}<span class="tt-times">by year group</span></th>`;
   };
-  // P2 starts at one of two times, and it can differ from day to day: a quiet choice under each day's box.
+  // P2 and Form: the time follows from the class code's year group (ttRule) and is shown under the box. Only a code without a year group gets a choice.
   const timePick = (row, d)=>{
-    if(row.key!=='p2') return '';
+    if(row.times.length===1) return '';
     const cur = ttChoice(tt, row, d);
-    return `<select class="tt-pick" data-pd="${d}" aria-label="${DAYS[d-1]} P2 time">${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select>`;
+    return `<span class="tt-auto" hidden></span><select class="tt-pick" data-pk="${row.key}" data-pd="${d}" aria-label="${DAYS[d-1]} ${row.name} time" hidden>${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select>`;
   };
   const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" aria-label="${DAYS[d-1]} ${row.name}">${timePick(row, d)}</td>`).join('')}</tr>`).join('');
   modal(`<h2>Your timetable</h2>
@@ -429,13 +433,24 @@ function openTimetable(){
     <div class="tt-wrap"><table class="tt-grid"><thead><tr><th></th>${DAYS.map(d=>`<th>${d}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
     <div class="foot"><button class="btn" data-a="no">Cancel</button><button class="btn primary" data-a="ok">Save timetable</button></div>`, (m, close)=>{
     m.classList.add('tt-modal');
+    // Under each P2 / Form box: the time its year group gives, or (no year group in the code) a choice of the two.
+    const showTimes = cell=>{
+      const inp = cell.querySelector('input[type=text]'), auto = cell.querySelector('.tt-auto'), sel = cell.querySelector('select.tt-pick');
+      if(!auto || !sel) return;
+      const row = TT_ROWS[Number(inp.dataset.r)], code = inp.value.trim(), r = ttRule(code);
+      auto.hidden = !code || r==null; sel.hidden = !code || r!=null;
+      if(r!=null) auto.textContent = timeText(row.times[r]);
+    };
+    m.querySelectorAll('td').forEach(showTimes);
+    m.addEventListener('input', e=>{ if(e.target.matches('input[type=text]')) showTimes(e.target.closest('td')); });
     const first = m.querySelector('input[type=text]'); if(first) first.focus();
     m.querySelector('[data-a=no]').onclick = close;
     m.querySelector('[data-a=ok]').onclick = ()=>{
       const grid = {};
       for(let d = 1; d <= 5; d++) grid[d] = TT_ROWS.map((row, i)=>m.querySelector(`[data-d="${d}"][data-r="${i}"]`).value.trim());
-      const p2Time = {}; for(let d = 1; d <= 5; d++) p2Time[d] = Number(m.querySelector(`[data-pd="${d}"]`).value) || 0;
-      data.timetable = { grid, p2Time, formTime:Number(m.querySelector('[data-ft]').value) || 0 };
+      // Kept for a code with no year group: its chosen time. (A year group's rule needs no saved choice.)
+      const choice = key=>{ const o = {}; for(let d = 1; d <= 5; d++) o[d] = Number(m.querySelector(`[data-pk="${key}"][data-pd="${d}"]`).value) || 0; return o; };
+      data.timetable = { grid, p2Time:choice('p2'), formTime:choice('form') };
       Planner.applyManual(data.timetable);
       saveSoon(); close();
       const n = new Set(Planner.data ? Planner.data.slots.map(s=>s.label) : []).size;
