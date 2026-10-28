@@ -68,4 +68,6 @@ See `NEEDS_REVIEW.md` in this repository (13 items). Main ones: `docx-preview` l
 3. `5292bb1` Rewrite README for version 1
 4. Add review notes and build report (this file; the hash is in `git log`)
 
+**Not pushed.** The commits are local only: `git push` could not sign in to GitHub from this session. Push `main` from a normal terminal or GitHub Desktop.
+
 The edits were made before the first commit so the staff names never entered the new history.
