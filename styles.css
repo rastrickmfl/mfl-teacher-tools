@@ -168,9 +168,20 @@ button.dr-when{ cursor:pointer; }
 .tt-grid thead th{ text-align:center; font-size:12px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--text-2); }
 .tt-grid tbody th{ width:96px; vertical-align:top; padding-top:8px; }
 .tt-grid td{ vertical-align:top; }
-.tt-grid input[type=text]{ width:100%; min-width:84px; }
-.modal .tt-grid input[data-c]{ background:hsl(var(--tt-h) 80% 93%); border-color:hsl(var(--tt-h) 55% 74%); color:#1F2937; }
-html[data-app-theme="dark"] .modal .tt-grid input[data-c]{ background:hsl(var(--tt-h) 35% 24%); border-color:hsl(var(--tt-h) 35% 40%); color:var(--text); }
+.tt-grid input[type=text]{ display:block; width:100%; min-width:84px; }
+.tt-grid td{ position:relative; }
+.tt-ghost{ position:absolute; left:13px; right:8px; top:1px; height:36px; font:inherit; line-height:36px; color:var(--text-2); opacity:.6; white-space:pre; overflow:hidden; pointer-events:none; }
+.tt-ghost i{ visibility:hidden; font-style:normal; }
+.modal .tt-grid input[data-y="7"]{ background:#EEF6DC; color:#4E6B1A; border-color:color-mix(in srgb, #4E6B1A 25%, #EEF6DC); }
+.modal .tt-grid input[data-y="8"]{ background:#E0F0F3; color:#0A5E70; border-color:color-mix(in srgb, #0A5E70 25%, #E0F0F3); }
+.modal .tt-grid input[data-y="9"]{ background:#F7E1EE; color:#8E1460; border-color:color-mix(in srgb, #8E1460 25%, #F7E1EE); }
+.modal .tt-grid input[data-y="10"]{ background:#EEE4ED; color:#5A2A57; border-color:color-mix(in srgb, #5A2A57 25%, #EEE4ED); }
+.modal .tt-grid input[data-y="11"]{ background:#EAEAE9; color:#3C3C3B; border-color:color-mix(in srgb, #3C3C3B 25%, #EAEAE9); }
+html[data-app-theme="dark"] .modal .tt-grid input[data-y="7"]{ background:#26331A; color:#BFE077; border-color:color-mix(in srgb, #BFE077 30%, #26331A); }
+html[data-app-theme="dark"] .modal .tt-grid input[data-y="8"]{ background:#123340; color:#7DD3E4; border-color:color-mix(in srgb, #7DD3E4 30%, #123340); }
+html[data-app-theme="dark"] .modal .tt-grid input[data-y="9"]{ background:#3D1B30; color:#F59CCF; border-color:color-mix(in srgb, #F59CCF 30%, #3D1B30); }
+html[data-app-theme="dark"] .modal .tt-grid input[data-y="10"]{ background:#2F1D2E; color:#D6A8D3; border-color:color-mix(in srgb, #D6A8D3 30%, #2F1D2E); }
+html[data-app-theme="dark"] .modal .tt-grid input[data-y="11"]{ background:#2D2D2C; color:#D4D4D2; border-color:color-mix(in srgb, #D4D4D2 30%, #2D2D2C); }
 .tt-name{ display:block; font-size:14px; font-weight:600; color:var(--text); }
 .tt-times{ display:block; font-size:11px; color:var(--text-2); }
 .modal .tt-grid select.tt-pick{ display:block; width:100%; min-width:0; height:20px; margin:2px 0 0; border:0; border-radius:0; box-shadow:none; font:inherit; font-size:11px; color:var(--text-2); text-align:center; text-align-last:center; cursor:pointer; appearance:none; -webkit-appearance:none; padding-right:12px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%236B7280' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 4px center; }
