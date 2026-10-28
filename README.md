@@ -4,7 +4,7 @@ A lesson slideshow viewer and set of teacher tools for MFL (modern foreign langu
 
 ## Running it
 
-Open `index.html` in a browser (Edge or Chrome work best). No server is needed for basic use.
+Open `index.html` in a browser (Edge or Chrome work best). No server is needed for basic use. Note that the starter Sentence Builders and Waypoints (see below) are only copied into your data folder when the app is served over http, because browsers block the page from reading its own files when it is opened straight from disk.
 
 To serve the folder locally instead, run any static file server from the repository folder, for example:
 
@@ -31,7 +31,7 @@ then visit `http://localhost:8000/`.
 
 ## Where data is stored
 
-On your own computer only. The first time you open the app it asks you to choose a data folder; lesson decks, settings, pen marks, Waypoints and Sentence Builders are saved in that folder, and the browser remembers which folder you chose. A browser that supports folder access is needed (Edge or Chrome). Nothing is sent to a server. This repository contains no data: no class lists, timetables or pupil information. The `Sentence Builders/` and `Waypoints/` folders here are starter content; copy them into your data folder to use them. A new lesson also needs a `New lesson template.pptx` in your data folder, which is not included in version 1.
+On your own computer only. The first time you open the app it asks you to choose a data folder; lesson decks, settings, pen marks, Waypoints and Sentence Builders are saved in that folder, and the browser remembers which folder you chose. A browser that supports folder access is needed (Edge or Chrome). Nothing is sent to a server. This repository contains no data: no class lists, timetables or pupil information. The `Sentence Builders/` and `Waypoints/` folders here are starter content. When the app is served over http, it copies them into your data folder the first time it opens that folder (it never overwrites a file you already have, and never puts back one you have changed or deleted). Your own Sentence Builders and Waypoints, and any edits you make, live in your data folder. When you open the app straight from disk, copy these two folders into your data folder by hand instead. A new lesson starts as an empty deck; templates are not included in version 1.
 
 ## Not included in version 1
 

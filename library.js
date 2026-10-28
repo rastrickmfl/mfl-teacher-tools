@@ -95,9 +95,47 @@
     while(await existsIn(dir, n)) n = `${stem} (${k++})${ext}`;
     return n;
   }
+  // A minimal one-slide, 16:9, blank deck, used when the data folder has no template.
+  async function blankDeck(){
+    const NS = 'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main"';
+    const X = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n';
+    const REL = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
+    const rels = list=>X + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' + list.map(([id, type, target])=>`<Relationship Id="${id}" Type="${REL}/${type}" Target="${target}"/>`).join('') + '</Relationships>';
+    const tree = '<p:spTree><p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr><p:grpSpPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="0" cy="0"/><a:chOff x="0" y="0"/><a:chExt cx="0" cy="0"/></a:xfrm></p:grpSpPr></p:spTree>';
+    const clr = (n, v)=>`<a:${n}><a:srgbClr val="${v}"/></a:${n}>`;
+    const fills = '<a:solidFill><a:schemeClr val="phClr"/></a:solidFill>';
+    const ln = '<a:ln w="9525"><a:solidFill><a:schemeClr val="phClr"/></a:solidFill></a:ln>';
+    const theme = X + `<a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Blank"><a:themeElements><a:clrScheme name="Blank">`
+      + '<a:dk1><a:sysClr val="windowText" lastClr="000000"/></a:dk1><a:lt1><a:sysClr val="window" lastClr="FFFFFF"/></a:lt1>'
+      + clr('dk2', '1F2937') + clr('lt2', 'F3F4F6') + clr('accent1', '4F5BD5') + clr('accent2', '1E9E5A') + clr('accent3', 'E0701A') + clr('accent4', '7B3FB5') + clr('accent5', '2F5BEA') + clr('accent6', 'D99A00') + clr('hlink', '2F5BEA') + clr('folHlink', '7B3FB5')
+      + '</a:clrScheme><a:fontScheme name="Blank"><a:majorFont><a:latin typeface="Calibri"/><a:ea typeface=""/><a:cs typeface=""/></a:majorFont><a:minorFont><a:latin typeface="Calibri"/><a:ea typeface=""/><a:cs typeface=""/></a:minorFont></a:fontScheme>'
+      + `<a:fmtScheme name="Blank"><a:fillStyleLst>${fills}${fills}${fills}</a:fillStyleLst><a:lnStyleLst>${ln}${ln}${ln}</a:lnStyleLst><a:effectStyleLst><a:effectStyle><a:effectLst/></a:effectStyle><a:effectStyle><a:effectLst/></a:effectStyle><a:effectStyle><a:effectLst/></a:effectStyle></a:effectStyleLst><a:bgFillStyleLst>${fills}${fills}${fills}</a:bgFillStyleLst></a:fmtScheme>`
+      + '</a:themeElements></a:theme>';
+    const z = new JSZip();
+    z.file('[Content_Types].xml', X + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'
+      + '<Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/>'
+      + '<Override PartName="/ppt/slideMasters/slideMaster1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"/>'
+      + '<Override PartName="/ppt/slideLayouts/slideLayout1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"/>'
+      + '<Override PartName="/ppt/slides/slide1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/>'
+      + '<Override PartName="/ppt/theme/theme1.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/></Types>');
+    z.file('_rels/.rels', rels([['rId1', 'officeDocument', 'ppt/presentation.xml']]));
+    z.file('ppt/presentation.xml', X + `<p:presentation ${NS}><p:sldMasterIdLst><p:sldMasterId id="2147483648" r:id="rId1"/></p:sldMasterIdLst><p:sldIdLst><p:sldId id="256" r:id="rId2"/></p:sldIdLst><p:sldSz cx="12192000" cy="6858000"/><p:notesSz cx="6858000" cy="9144000"/></p:presentation>`);
+    z.file('ppt/_rels/presentation.xml.rels', rels([['rId1', 'slideMaster', 'slideMasters/slideMaster1.xml'], ['rId2', 'slide', 'slides/slide1.xml'], ['rId3', 'theme', 'theme/theme1.xml']]));
+    z.file('ppt/slideMasters/slideMaster1.xml', X + `<p:sldMaster ${NS}><p:cSld><p:bg><p:bgRef idx="1001"><a:schemeClr val="bg1"/></p:bgRef></p:bg>${tree}</p:cSld><p:clrMap bg1="lt1" tx1="dk1" bg2="lt2" tx2="dk2" accent1="accent1" accent2="accent2" accent3="accent3" accent4="accent4" accent5="accent5" accent6="accent6" hlink="hlink" folHlink="folHlink"/><p:sldLayoutIdLst><p:sldLayoutId id="2147483649" r:id="rId1"/></p:sldLayoutIdLst></p:sldMaster>`);
+    z.file('ppt/slideMasters/_rels/slideMaster1.xml.rels', rels([['rId1', 'slideLayout', '../slideLayouts/slideLayout1.xml'], ['rId2', 'theme', '../theme/theme1.xml']]));
+    z.file('ppt/slideLayouts/slideLayout1.xml', X + `<p:sldLayout ${NS} type="blank" preserve="1"><p:cSld name="Blank">${tree}</p:cSld><p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sldLayout>`);
+    z.file('ppt/slideLayouts/_rels/slideLayout1.xml.rels', rels([['rId1', 'slideMaster', '../slideMasters/slideMaster1.xml']]));
+    z.file('ppt/slides/slide1.xml', X + `<p:sld ${NS}><p:cSld>${tree}</p:cSld><p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr></p:sld>`);
+    z.file('ppt/slides/_rels/slide1.xml.rels', rels([['rId1', 'slideLayout', '../slideLayouts/slideLayout1.xml']]));
+    z.file('ppt/theme/theme1.xml', theme);
+    const blob = await z.generateAsync({ type:'blob', mimeType:'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
+    blob.blank = true;
+    return blob;
+  }
+  // The data folder's template if it has one, otherwise an empty deck.
   async function templateFile(){
     try{ return await (await store.dir.getFileHandle(TEMPLATE)).getFile(); }
-    catch(e){ throw new Error(`'${TEMPLATE}' isn't in the ${store.name} folder`); }
+    catch(e){ return blankDeck(); }
   }
   async function writeToLibrary(folder, fileName, blob){
     await ensureFixed();
@@ -152,7 +190,7 @@
     const slots = weekSlots();
     const si = pickDefault(slots, meta);
     const startFolder = defaultFolder(si>=0 ? slots[si].meta : null, si>=0 ? slots[si].d : C.selDate);
-    modal(`<h2>Create a lesson</h2><p>A new deck from <b>${esc(TEMPLATE)}</b>: Outcomes, IN&amp;ON, Waypoint and Task slides.</p>
+    modal(`<h2>Create a lesson</h2><p>A new empty deck. If <b>${esc(TEMPLATE)}</b> is in your data folder, the deck starts from that instead.</p>
       <label class="cr-lbl" for="cr-name">Name</label>
       <input type="text" id="cr-name" maxlength="120" placeholder="e.g. Lesson 13 - Expansion">
       <div class="cr-dest ${si>=0 ? 'on' : 'off'}" data-cr="lesson">
@@ -231,7 +269,8 @@
     try{
       showLoading('Creating ' + fileName + '…');
       const tpl = await templateFile();
-      const filled = wp ? await waypointTemplate(tpl, wp) : null;
+      if(wp && tpl.blank) toast('An empty deck has no Waypoint slide: add the Waypoint from Insert → Waypoint.', true);
+      const filled = wp && !tpl.blank ? await waypointTemplate(tpl, wp) : null;
       const file = new File([await (filled || tpl).arrayBuffer()], fileName, { type:tpl.type || 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
       if(folder){
         libPath = await writeToLibrary(folder, fileName, file);

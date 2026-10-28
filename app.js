@@ -1291,6 +1291,7 @@ function renderSplash(kind){
 async function loadAndGo(){
   showLoading('Opening…');
   try{
+    if(window.SVStarter && store.dir){ try{ await SVStarter.seed(store.dir); }catch(e){ console.warn(e); } } // starter Sentence Builders and Waypoints
     const r = await store.readData();
     data = normalise(r.data);
     if(!r.data) await saveNow(); else afterRead();
