@@ -168,7 +168,8 @@ button.dr-when{ cursor:pointer; }
 .tt-grid thead th{ text-align:center; }
 .tt-grid input[type=text]{ width:100%; min-width:84px; }
 .tt-times{ display:block; font-weight:400; font-size:12px; margin-top:2px; }
-.tt-times input{ width:84px; height:26px; border:1px solid var(--border-strong); border-radius:var(--r); padding:0 4px; font:inherit; font-size:12px; background:var(--surface); color:inherit; }
+.tt-times label{ display:block; white-space:nowrap; cursor:pointer; }
+.tt-times input{ margin:0 4px 0 0; vertical-align:-2px; }
 .modal h2{ margin:0 0 4px; font-size:var(--fs-xl); font-weight:600; }
 .modal p{ color:var(--text-2); margin:0 0 12px; }
 .modal .row{ display:flex; align-items:center; gap:12px; padding:14px 0; border-top:1px solid var(--border); }

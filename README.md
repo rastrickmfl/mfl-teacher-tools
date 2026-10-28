@@ -21,7 +21,7 @@ then visit `http://localhost:8000/`.
 - **Reveals.** Objects that are hidden at the start of a slide can be revealed during the lesson.
 - **Pen marks.** Drawn on the slide while presenting.
 - **Slide editor.** A full PowerPoint-style editor with templates and galleries, plus quick live changes (pen and reveal toggles, basic text editing). Decks open as imported; a year group's colours are applied only if you choose them in the editor's Design tab.
-- **Timetable and class lists.** Type your class codes into a Monday to Friday, five-period grid (Settings → Timetable). Each new class code gets a class list in Settings → Classes, where you can paste in the class's names.
+- **Timetable and class lists.** Type your class codes into a Monday to Friday grid of P1 to P5 plus Form (Settings → Timetable). P2 and Form each have two possible times; tick the one you use. Each new class code gets a class list in Settings → Classes, where you can paste in the class's names.
 - **Clock.** Timer, stopwatch and alarms (alarms last only while the tab is open), with a display-mode toggle.
 - **Games.** Game of Chance, Beat the Teacher (the class plays against the teacher), Bob Up, Hungry Translations, Splat, Noughts & Crosses, Connect 4 and Sentence Unjumble.
 - **Sentence Builder.** Presenter mode and Mindreader, with ready-made sentence builders in `Sentence Builders/`.
