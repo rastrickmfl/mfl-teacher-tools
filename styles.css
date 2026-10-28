@@ -168,6 +168,7 @@ button.dr-when{ cursor:pointer; }
 .tt-grid thead th{ text-align:center; }
 .tt-grid input[type=text]{ width:100%; min-width:84px; }
 .tt-times{ display:block; font-weight:400; font-size:12px; margin-top:2px; }
+.tt-pick{ width:100%; min-width:84px; margin-top:4px; height:28px; border:1px solid var(--border-strong); border-radius:var(--r); font:inherit; font-size:12px; background:var(--surface); color:inherit; }
 .tt-times label{ display:block; white-space:nowrap; cursor:pointer; }
 .tt-times input{ margin:0 4px 0 0; vertical-align:-2px; }
 .modal h2{ margin:0 0 4px; font-size:var(--fs-xl); font-weight:600; }

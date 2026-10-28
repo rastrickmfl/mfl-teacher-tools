@@ -330,7 +330,12 @@ const TT_ROWS = [
   { key:'p4', name:'P4', period:4, times:[['13:30','14:30']] },
   { key:'p5', name:'P5', period:5, times:[['14:30','15:30']] },
 ];
-const ttTimes = (tt, row)=>row.times[row.times.length > 1 && tt && tt[row.key + 'Time']===1 ? 1 : 0]; // tt.p2Time / tt.formTime: 0 = first option, 1 = second
+// Which time a row runs at (0 = first option, 1 = second): P2 is chosen for each day (tt.p2Time[day]; a plain number from an earlier version applies to every day), Form once for all days (tt.formTime).
+function ttChoice(tt, row, day){
+  const v = tt ? tt[row.key + 'Time'] : 0;
+  return row.times.length > 1 && (v && typeof v==='object' ? v[day] : v)===1 ? 1 : 0;
+}
+const ttTimes = (tt, row, day)=>row.times[ttChoice(tt, row, day)];
 const Planner = {
   handle:null, data:null, source:null, fileName:'', needsPerm:false, error:'',
   valid(d){ return d && Array.isArray(d.slots); },
@@ -373,7 +378,7 @@ const Planner = {
         let code = String(col[i] || '').trim();
         if(!code) return;
         if(row.form && !/^Form\b/.test(code)) code = 'Form ' + code; // "8F" → "Form 8F", so it is treated as a form session
-        const [start, end] = ttTimes(tt, row);
+        const [start, end] = ttTimes(tt, row, day);
         slots.push(row.form ? { id:`d${day}form`, day, start, end, label:code } : { id:`d${day}p${row.period}`, day, period:row.period, start, end, label:code });
       });
     }
@@ -406,12 +411,19 @@ function openTimetable(){
   const timeText = t=>`${t[0]}–${t[1]}`;
   const head = row=>{
     if(row.times.length===1) return `<th scope="row">${row.name}<span class="tt-times">${timeText(row.times[0])}</span></th>`;
-    const cur = ttTimes(tt, row) === row.times[1] ? 1 : 0;
+    if(row.key==='p2') return `<th scope="row">${row.name}<span class="tt-times">time set for each day</span></th>`;
+    const cur = ttChoice(tt, row);
     return `<th scope="row">${row.name}<span class="tt-times">${row.times.map((t, k)=>`<label><input type="radio" name="tt-${row.key}" value="${k}" ${k===cur ? 'checked' : ''}> ${timeText(t)}</label>`).join('')}</span></th>`;
   };
-  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" aria-label="${DAYS[d-1]} ${row.name}"></td>`).join('')}</tr>`).join('');
+  // P2 starts at one of two times, and it can differ from day to day: a small choice under each day's box.
+  const timePick = (row, d)=>{
+    if(row.key!=='p2') return '';
+    const cur = ttChoice(tt, row, d);
+    return `<select class="tt-pick" data-pd="${d}" aria-label="${DAYS[d-1]} P2 time">${row.times.map((t, k)=>`<option value="${k}" ${k===cur ? 'selected' : ''}>${timeText(t)}</option>`).join('')}</select>`;
+  };
+  const rows = TT_ROWS.map((row, i)=>`<tr>${head(row)}${[1,2,3,4,5].map(d=>`<td><input type="text" maxlength="24" data-d="${d}" data-r="${i}" placeholder="${row.form ? 'e.g. 8F' : ''}" value="${esc(value(d, i))}" aria-label="${DAYS[d-1]} ${row.name}">${timePick(row, d)}</td>`).join('')}</tr>`).join('');
   modal(`<h2>Your timetable</h2>
-    <p>Type the class code for each lesson, for example <b>8A/Fr1</b>, and your form group in the Form row. Leave a box empty for a free period. Each new class code gets its own class list in Settings → Classes, where you can paste in the class's names. Tick which time P2 and Form run at; it applies to every day.</p>
+    <p>Type the class code for each lesson, for example <b>8A/Fr1</b>, and your form group in the Form row. Leave a box empty for a free period. Each new class code gets its own class list in Settings → Classes, where you can paste in the class's names. Choose which time P2 runs at on each day, and tick which time Form runs at (the same for every day).</p>
     <div class="tt-wrap"><table class="tt-grid"><thead><tr><th></th>${DAYS.map(d=>`<th>${d}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
     <div class="foot"><button class="btn" data-a="no">Cancel</button><button class="btn primary" data-a="ok">Save timetable</button></div>`, (m, close)=>{
     m.classList.add('tt-modal');
@@ -421,7 +433,8 @@ function openTimetable(){
       const grid = {};
       for(let d = 1; d <= 5; d++) grid[d] = TT_ROWS.map((row, i)=>m.querySelector(`[data-d="${d}"][data-r="${i}"]`).value.trim());
       const pick = key=>{ const r = m.querySelector(`input[name="tt-${key}"]:checked`); return r ? Number(r.value) : 0; };
-      data.timetable = { grid, p2Time:pick('p2'), formTime:pick('form') };
+      const p2Time = {}; for(let d = 1; d <= 5; d++) p2Time[d] = Number(m.querySelector(`[data-pd="${d}"]`).value) || 0;
+      data.timetable = { grid, p2Time, formTime:pick('form') };
       Planner.applyManual(data.timetable);
       saveSoon(); close();
       const n = new Set(Planner.data ? Planner.data.slots.map(s=>s.label) : []).size;
